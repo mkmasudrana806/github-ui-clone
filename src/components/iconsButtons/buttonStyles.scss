@@ -1,0 +1,51 @@
+@import "../../assets/styles/styles.scss";
+
+//ButtonIcon: button with icon styles
+.btn-icon {
+  @include basic-button(28px);
+  display: inline-flex;
+  column-gap: 10px;
+  align-items: center;
+  background-color: green;
+  padding: 0px 8px;
+  border: none;
+  color: $color-primary;
+}
+
+// ButtonImg:
+
+.icon-text-btn {
+  @include flex-align-center;
+}
+
+// icon with text. arguements icon and text dynamically
+.icon-text {
+  @include inline-flex;
+  border: none;
+  > span {
+    @include inline-flex;
+  }
+}
+
+// button group. two button. button contain icons
+.btn-star,
+.btn-dropdown {
+  @include basic-button(28px);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+  color: $color-muted;
+  background-color: $bg-box-secondary;
+}
+.btn-star {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  .star {
+    color: $color-primary;
+  }
+}
+.btn-dropdown {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+}

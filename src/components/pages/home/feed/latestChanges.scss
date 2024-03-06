@@ -1,0 +1,12 @@
+@import "../../../../assets/styles/styles.scss";
+
+.lastest-changes-cart {
+  @include borderBox;
+  padding: 16px;
+  .change > p {
+    @include line-clamp(2);
+  }
+  .view {
+    cursor: pointer;
+  }
+}

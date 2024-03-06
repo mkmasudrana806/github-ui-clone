@@ -1,0 +1,34 @@
+@import "../../assets/styles/styles.scss";
+
+.left-home {
+  flex: 0 0 auto;
+  width: 320px;
+  padding: 24px;
+  height: 100vh;
+
+  // scrollbar style
+  // overflow-y: scroll;
+  overflow-y: auto;
+  scrollbar-color: $bg-scrollbar-track $bg-scrollbar-thumb;
+  border-right: 1px solid $border-primary;
+  background-color: $bg-box-primary;
+  // top repogitories
+  .top-repos > div {
+    color: $color-primary;
+    margin-top: 10px;
+    span {
+      font-size: 13px;
+      font-weight: normal;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .recent-activity {
+    border: 1px dashed $color-muted;
+    padding: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+}

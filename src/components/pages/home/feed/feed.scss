@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/styles.scss";
+
+.feeds {
+  margin-left: 24px;
+
+  // octoverse cart
+  .octoverse {
+    background: url("../../../../assets/octoverse.jpg"); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-position: center; /* Center the background image */
+    @include borderBox("yes", black);
+    .logo-title {
+      display: flex;
+      column-gap: 8px;
+      span {
+        color: $color-muted;
+      }
+    }
+    .octoverse-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      @include basic-button;
+      color: $color-primary;
+      background-color: $bg-box-secondary;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@use "../../assets/styles/variables" as var;
+.account-drop-down {
+  position: fixed;
+  width: 320px;
+  right: 0;
+  top: 0;
+  border-left: 1px solid var.$border-primary;
+  border-top-left-radius: 15px;
+  background-color: var.$bg-box-primary;
+  z-index: 101;
+
+  .account-header {
+    padding: 15px;
+    .close-account {
+      height: 30px;
+      width: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background-color: var.$bg-box-secondary;
+      cursor: pointer;
+      color: var.$color-muted;
+      &:hover {
+        color: var.$color-primary;
+      }
+    }
+  }
+
+  .account-content {
+    overflow-y: auto;
+    height: 90vh;
+    padding: 0px 15px 15px 15px;
+    ul {
+      list-style: none;
+      li {
+        padding: 8px 8px 3px 8px;
+        border-radius: 5px;
+        color: var.$color-primary;
+        &:hover {
+          background-color: var.$bg-box-secondary;
+        }
+        button {
+          font-size: 14px;
+          .text {
+            color: white;
+          }
+          .icon {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    
+  }
+}

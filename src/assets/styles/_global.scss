@@ -1,0 +1,114 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  color: $color-primary;
+  background-color: $bg-main;
+}
+
+// custom scroll bar styles
+.custom-scrollbar {
+  overflow-y: auto;
+  scrollbar-color: $bg-scrollbar-track $bg-scrollbar-thumb;
+}
+
+// cursor pointer
+.pointer {
+  cursor: pointer;
+}
+
+// vertically aligned and flex between
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// flex and horizontal alignment with 10px column gap
+.flex-left {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+// margin-top globally
+.mt-1 {
+  margin-top: 20px;
+}
+.mt-2 {
+  margin-top: 15px;
+}
+.mt-3 {
+  margin-top: 12px;
+}
+.mt-4 {
+  margin-top: 10px;
+}
+.mt-5 {
+  margin-top: 8px;
+}
+
+// margin bottom globally
+.mb-1 {
+  margin-bottom: 15px;
+}
+.mb-2 {
+  margin-bottom: 12px;
+}
+.mb-3 {
+  margin-bottom: 10px;
+}
+
+// border for icon
+.icon-border {
+  border: 1px solid $border-primary;
+  padding: 6px 7px 1px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+// Define the map with font sizes, font weights, and colors
+$font-styles: (
+  "small": (
+    size: 12px,
+    weight: 300,
+    // color: #a0a0a0,
+    color: $color-muted,
+  ),
+  "normal": (
+    size: 13px,
+    weight: 300,
+    color: $color-primary,
+  ),
+  "bold": (
+    size: 13px,
+    weight: 600,
+    color: $color-primary,
+  ),
+  "medium": (
+    size: 14px,
+    weight: 500,
+    color: $color-primary,
+  ),
+  "large": (
+    size: 24px,
+    weight: 500,
+    color: $color-primary,
+  ),
+);
+
+// Loop through the map and generate styles
+@each $size, $style in $font-styles {
+  .text-#{$size} {
+    font-size: map-get($style, size);
+    font-weight: map-get($style, weight);
+    color: map-get($style, color);
+  }
+}

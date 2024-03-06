@@ -1,0 +1,57 @@
+@use "./variables" as var;
+
+// styles for border and without border box and custom background color;
+@mixin borderBox($brder: var.$border-primary, $bgColor: var.$bg-box-primary) {
+  @if $brder == none {
+    border: none;
+  } @else if $brder == yes {
+    border: 1px solid var.$border-primary;
+  } @else {
+    border: 1px solid $brder;
+  }
+  padding: 16px;
+  border-radius: 6px;
+  background-color: $bgColor;
+}
+
+// both height and width 100%
+@mixin hw-full {
+  height: 100%;
+  width: 100%;
+}
+
+// display flex and align-items: center
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+// default size 32px, we can pass dynamic size
+@mixin basic-button($size: 32px) {
+  border: 1px solid var.$border-primary;
+  border-radius: 5px;
+  height: $size;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: var.$color-primary;
+}
+
+// inline flex with center and gap between them
+@mixin inline-flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+  background: none;
+  color: var.$color-muted;
+}
+
+// line clamp. default 3. parameter receive a number
+@mixin line-clamp($no: 3) {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $no;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

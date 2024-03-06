@@ -1,0 +1,24 @@
+@import "../../../../assets/styles/styles.scss";
+
+.explore-repo {
+  @include borderBox;
+  .inner {
+    @include borderBox(none, $bg-box-primary);
+    padding: 0px;
+    .activity-footer {
+      @include flex-align-center;
+      column-gap: 25px;
+    }
+    .star-btn {
+      @include basic-button(28px);
+      background-color: $bg-box-secondary;
+    }
+    .description {
+      @include line-clamp(2);
+    }
+  }
+  .explore-more {
+    color: $color-color-primary;
+    cursor: pointer;
+  }
+}

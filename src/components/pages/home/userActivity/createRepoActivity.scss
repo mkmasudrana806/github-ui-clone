@@ -1,0 +1,22 @@
+@import "../../../../assets/styles/styles.scss";
+
+.repoActivityCart {
+  @include borderBox;
+  .user-activity {
+    display: flex;
+    justify-content: space-between;
+    color: $color-muted;
+    .activity-user-profile {
+      @include flex-align-center;
+    }
+  }
+
+  .inner {
+    margin-top: 15px;
+    @include borderBox(none, $bg-box-secondary);
+    .activity-footer {
+      @include flex-align-center;
+      column-gap: 25px;
+    }
+  }
+}

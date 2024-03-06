@@ -1,0 +1,81 @@
+@use "../../assets/styles/variables" as var;
+.menu-drop-down {
+  position: fixed;
+  width: 320px;
+  border-right: 1px solid var.$border-primary;
+  border-top-right-radius: 15px;
+  background-color: var.$bg-box-primary;
+  z-index: 101;
+
+  .menu-header {
+    padding: 15px;
+    .close-menu {
+      height: 30px;
+      width: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background-color: var.$bg-box-secondary;
+      cursor: pointer;
+      color: var.$color-muted;
+      &:hover {
+        color: var.$color-primary;
+      }
+    }
+  }
+
+  .menu-content {
+    overflow-y: auto;
+    height: 90vh;
+    padding: 0px 15px 15px 15px;
+    ul {
+      list-style: none;
+      li {
+        padding: 8px 8px 3px 8px;
+        border-radius: 5px;
+        color: var.$color-primary;
+        &:hover {
+          background-color: var.$bg-box-secondary;
+        }
+        button {
+          font-size: 14px;
+          .text {
+            color: white;
+          }
+          .icon {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    // top repogitories
+    .top-repos > div {
+      padding: 8px;
+      border-radius: 5px;
+      color: var.$color-primary;
+      span {
+        font-size: 13px;
+        font-weight: normal;
+      }
+      &:hover {
+        background-color: var.$bg-box-secondary;
+      }
+    }
+
+    // footer links
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 12px;
+      row-gap: 5px;
+
+      a {
+        color: var.$color-color-primary;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

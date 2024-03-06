@@ -1,0 +1,49 @@
+@import "../../assets/styles/styles.scss";
+
+// input field for placeholder input
+.input-field {
+  border: 1px solid $border-primary;
+  border-radius: 7px;
+  input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: $color-primary;
+    padding: 8px;
+  }
+}
+
+// input field with icon both side
+.search-field {
+  border: 1px solid $border-primary;
+  border-radius: 7px;
+  position: relative;
+  color: $color-muted;
+  input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: $color-primary;
+    padding: 8px 35px;
+  }
+  .start {
+    position: absolute;
+    left: 12px;
+    top: 7px;
+  }
+  .end {
+    position: absolute;
+    @include flex-align-center;
+    column-gap: 4px;
+    right: 12px;
+    top: 7px;
+  }
+
+  .end-command {
+    position: absolute;
+    @include flex-align-center;
+    column-gap: 4px;
+    right: 12px;
+    top: 4px;
+  }
+}

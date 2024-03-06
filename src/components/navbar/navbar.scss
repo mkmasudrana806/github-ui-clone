@@ -1,0 +1,55 @@
+@import "../../assets/styles/styles.scss";
+
+.appHeader {
+  // dropdown menu and account with overlay
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#1c222b, 0.5); /* Semi-transparent overlay */
+    z-index: 100; /* Ensure it's above other content */
+  }
+
+  .appHeader-globalBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    height: 65px;
+    border-bottom: 1px solid $border-primary;
+    color: $color-muted;
+
+    .appHeader-globalbar-start {
+      @include flex-align-center;
+      flex: 1 1 auto;
+      column-gap: 15px;
+      a {
+        height: 100%;
+        img {
+          @include hw-full;
+        }
+      }
+    }
+
+    // globalbar end: mainly profile or actions section
+    .appHeader-globalbar-end {
+      @include flex-align-center;
+      flex: end;
+
+      .appHeader-end-actions {
+        @include flex-align-center;
+        .seperator {
+          transform: scale(0.3, 1.2);
+        }
+      }
+      .appHeader-end-user {
+        height: 33px;
+        width: 33px;
+        svg {
+          @include hw-full;
+        }
+      }
+    }
+  }
+}
