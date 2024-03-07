@@ -4,26 +4,17 @@ import { GoCommandPalette } from "react-icons/go";
 import "./InputField.scss";
 
 // props format: size="200px" or %. startIcon={<Something />}, endIcon={<Something />}
-const SearchFieldIcon = ({
+const SearchFieldLeftIcon = ({
   size = "350px",
   startIcon = <RiSearchLine />,
-  endIcon = null,
   text = "Type to search",
 }) => {
   return (
-    <div style={{ width: `${size}` }} className="search-field">
+    <div style={{ width: `${size}` }} className="search-field-left-icon">
       <input type="text" placeholder={text} />
       {startIcon && <span className="start">{startIcon}</span>}
-      {endIcon ? (
-        <div className="end">{endIcon}</div>
-      ) : (
-        <div className="end-command">
-          <div className="separator">|</div>
-          <GoCommandPalette />
-        </div>
-      )}
     </div>
   );
 };
 
-export default SearchFieldIcon;
+export default SearchFieldLeftIcon;

@@ -14,6 +14,7 @@ import { FiGift } from "react-icons/fi";
 import Divider from "../Divider";
 import InputField from "../forms/InputField";
 import ButtonImg from "../iconsButtons/ButtonImg";
+import { Link } from "react-router-dom";
 
 const MenuDropDown = ({ handleClose }) => {
   return (
@@ -31,31 +32,53 @@ const MenuDropDown = ({ handleClose }) => {
       {/* menu list content  */}
       <div className="menu-content">
         <ul>
-          <li>
-            <IconWithText icon={<GoHome />} text={"Home"} />
-          </li>
-          <li>
-            <IconWithText icon={<FaRegDotCircle />} text={"Issues"} />
-          </li>
-          <li>
-            <IconWithText icon={<TbGitPullRequest />} text={"Pull requests"} />
-          </li>
-          <li>
-            <IconWithText icon={<GoProjectSymlink />} text={"Projects"} />
-          </li>
-          <li>
-            <IconWithText icon={<GoCommentDiscussion />} text={"Discussions"} />
-          </li>
-          <li>
-            <IconWithText icon={<GoCodespaces />} text={"Codespaces"} />
-          </li>
+          <Link to={"/footer"}>
+            <li onClick={handleClose}>
+              <IconWithText icon={<GoHome />} text={"Home"} />
+            </li>
+          </Link>
+          <Link to={"/footer"}>
+            <li>
+              <IconWithText icon={<FaRegDotCircle />} text={"Issues"} />
+            </li>
+          </Link>
+          <Link to={"/footer"}>
+            <li>
+              <IconWithText
+                icon={<TbGitPullRequest />}
+                text={"Pull requests"}
+              />
+            </li>
+          </Link>
+          <Link to={"/footer"}>
+            <li>
+              <IconWithText icon={<GoProjectSymlink />} text={"Projects"} />
+            </li>
+          </Link>
+          <Link to={"/footer"}>
+            <li>
+              <IconWithText
+                icon={<GoCommentDiscussion />}
+                text={"Discussions"}
+              />
+            </li>
+          </Link>
+          <Link to={"/footer"}>
+            <li>
+              <IconWithText icon={<GoCodespaces />} text={"Codespaces"} />
+            </li>
+          </Link>
           <Divider />
-          <li>
-            <IconWithText icon={<GoTelescope />} text={"Explore"} />
-          </li>
-          <li>
-            <IconWithText icon={<FiGift />} text={"Marketplace"} />
-          </li>
+          <Link to={"/footer"}>
+            <li>
+              <IconWithText icon={<GoTelescope />} text={"Explore"} />
+            </li>
+          </Link>
+          <Link to={"/footer"}>
+            <li>
+              <IconWithText icon={<FiGift />} text={"Marketplace"} />
+            </li>
+          </Link>
           <Divider />
         </ul>
         {/* repositores  */}
@@ -64,7 +87,9 @@ const MenuDropDown = ({ handleClose }) => {
           <InputField size="100%" text="Find a repository..." />
         </div>
         <div className="top-repos mt-1">
-          <ButtonImg text="mkmasudrana806/Redux" />
+          <Link>
+            <ButtonImg text="mkmasudrana806/Redux" />
+          </Link>
           <ButtonImg text="mkmasudrana806/Job-seeker-career-hub" />
           <ButtonImg text="mkmasudrana806/JavaScript-Mastering" />
           <ButtonImg text="mkmasudrana806/learn-programming-client-side" />
