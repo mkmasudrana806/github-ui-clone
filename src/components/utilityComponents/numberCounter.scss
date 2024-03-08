@@ -1,0 +1,13 @@
+@use "../../assets/styles/variables" as var;
+
+.value {
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5a5e63;
+  margin-left: 8px;
+  margin-right: 8px;
+}

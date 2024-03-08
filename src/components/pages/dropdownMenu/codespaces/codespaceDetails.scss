@@ -1,0 +1,73 @@
+@import "../../../../assets/styles/styles.scss";
+
+// codespace feedback popup
+.codespace-feedback {
+  @include borderBox;
+  .codespace-logo {
+    min-height: 30px;
+    min-width: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: rgba(50, 50, 99, 0.377);
+    cursor: pointer;
+    color: $color-color-primary;
+  }
+  .cancel-feedback-popup {
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $color-muted;
+    &:hover {
+      color: $color-primary;
+      background-color: $bg-box-secondary;
+    }
+  }
+}
+
+// all templates
+// explore templates
+.explore-templates {
+  @include borderBox;
+  .see-all {
+    color: $color-color-primary;
+  }
+  .templates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    gap: 16px;
+    margin-top: 25px;
+  }
+  .template-cart {
+    @include borderBox;
+    .details {
+      line-height: 20px;
+    }
+  }
+}
+
+// codespace created
+.codespace-created {
+  background-color: $bg-box-primary;
+  border: 1px solid $border-primary;
+  border-radius: 5px;
+  .head {
+    background-color: $bg-box-secondary;
+    padding: 16px;
+    border-bottom: 1px solid $border-primary;
+  }
+  .body {
+    padding: 16px;
+    svg {
+      font-size: 18px;
+    }
+    .option {
+      color: $color-muted;
+    }
+  }
+}

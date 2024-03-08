@@ -1,0 +1,36 @@
+.feeds {
+  margin-left: 24px;
+}
+.feeds .octoverse {
+  background: url("../../../../assets/octoverse.jpg"); /* Specify the path to your image */
+  background-size: cover; /* Cover the entire element with the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-position: center; /* Center the background image */
+  border: 1px solid #30363d;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: black;
+}
+.feeds .octoverse .logo-title {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.feeds .octoverse .logo-title span {
+  color: #848d97;
+}
+.feeds .octoverse .octoverse-header {
+  display: flex;
+  justify-content: space-between;
+}
+.feeds .octoverse button {
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  height: 32px;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: white;
+  color: white;
+  background-color: #1c222b;
+  width: 100%;
+}/*# sourceMappingURL=feed.css.map */

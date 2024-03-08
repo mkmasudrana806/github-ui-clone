@@ -1,8 +1,10 @@
-@import "../../../assets/styles/styles.scss";
+@import "../../../../assets/styles/styles.scss";
 
-.pullRequest-page {
-  margin: 0px 168px;
-  .pullRequest-body {
+.issues-page {
+  // margin: 0px 168px;
+  max-width: 1010px;
+  margin: 0 auto;
+  .issue-body {
     padding: 24px 16px 0px 16px;
     // subnav tabs
     .subnav {
@@ -22,11 +24,10 @@
           border-top-right-radius: 0px;
           border-bottom-right-radius: 0px;
         }
-        &:nth-child(2),
-        &:nth-child(3) {
+        &:nth-child(2) {
           border-radius: 0px;
         }
-        &:nth-child(4) {
+        &:nth-child(3) {
           border-left: none;
           border-top-left-radius: 0px;
           border-bottom-left-radius: 0px;
@@ -37,17 +38,17 @@
       }
     }
 
-    // pullRequest content
-    .pullRequest-content {
+    // issue content
+    .issue-content {
       border: 1px solid $border-primary;
       border-radius: 6px;
       background-color: $bg-box-primary;
       // content head
       .head {
+        background-color: $bg-box-secondary;
         padding: 16px;
         border-bottom: 1px solid $border-primary;
-        background-color: $bg-box-secondary;
-        .pullRequest-status {
+        .issue-status {
           .text {
             color: white;
           }
@@ -88,7 +89,7 @@
         }
       }
     }
-    .pullRequest-footer {
+    .issue-footer {
       color: $color-muted;
       text-align: center;
       span.protip {

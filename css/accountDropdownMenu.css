@@ -1,0 +1,52 @@
+.account-drop-down {
+  position: fixed;
+  width: 320px;
+  right: 0;
+  top: 0;
+  border-left: 1px solid #30363d;
+  border-top-left-radius: 15px;
+  background-color: #0d1117;
+  z-index: 101;
+}
+.account-drop-down .account-header {
+  padding: 15px;
+}
+.account-drop-down .account-header .close-account {
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #1c222b;
+  cursor: pointer;
+  color: #848d97;
+}
+.account-drop-down .account-header .close-account:hover {
+  color: white;
+}
+.account-drop-down .account-content {
+  overflow-y: auto;
+  height: 90vh;
+  padding: 0px 15px 15px 15px;
+}
+.account-drop-down .account-content ul {
+  list-style: none;
+}
+.account-drop-down .account-content ul li {
+  padding: 8px 8px 3px 8px;
+  border-radius: 5px;
+  color: white;
+}
+.account-drop-down .account-content ul li:hover {
+  background-color: #1c222b;
+}
+.account-drop-down .account-content ul li button {
+  font-size: 14px;
+}
+.account-drop-down .account-content ul li button .text {
+  color: white;
+}
+.account-drop-down .account-content ul li button .icon {
+  font-size: 18px;
+}/*# sourceMappingURL=accountDropdownMenu.css.map */

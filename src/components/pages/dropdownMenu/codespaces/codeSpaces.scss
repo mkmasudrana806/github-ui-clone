@@ -1,0 +1,59 @@
+@import "../../../../assets/styles/styles.scss";
+
+.codespaces-page {
+  margin: 0px 24px;
+  .codespaces-body {
+    padding: 24px 16px;
+    display: flex;
+
+    .left {
+      margin-bottom: 15px;
+      padding-right: 32px;
+      min-width: 300px;
+      // navigation
+      ul {
+        li {
+          list-style: none;
+          a {
+            button {
+              @include basic-button;
+              width: 100%;
+              // background-color: red;
+              border: none;
+              .text {
+                color: $color-primary;
+              }
+              .icon {
+                font-size: 18px;
+              }
+            }
+          }
+          a.active {
+            background-color: $bg-box-secondary;
+            border-radius: 5px;
+            position: relative;
+            &::before {
+              position: absolute;
+              top: 4px;
+              width: 4px;
+              height: 24px;
+              margin-left: -8px;
+              content: "";
+              background: $color-color-primary;
+              border-radius: 6px;
+            }
+          }
+          &:hover {
+            background-color: $bg-box-secondary;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    // right side
+    .right {
+      width: 100%;
+    }
+  }
+}

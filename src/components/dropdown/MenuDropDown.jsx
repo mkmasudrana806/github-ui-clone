@@ -32,50 +32,50 @@ const MenuDropDown = ({ handleClose }) => {
       {/* menu list content  */}
       <div className="menu-content">
         <ul>
-          <Link to={"/footer"}>
+          <Link to={"/"}>
             <li onClick={handleClose}>
               <IconWithText icon={<GoHome />} text={"Home"} />
             </li>
           </Link>
-          <Link to={"/footer"}>
-            <li>
+          <Link to={"/issues"}>
+            <li onClick={handleClose}>
               <IconWithText icon={<FaRegDotCircle />} text={"Issues"} />
             </li>
           </Link>
-          <Link to={"/footer"}>
-            <li>
+          <Link to={"/pulls"}>
+            <li onClick={handleClose}>
               <IconWithText
                 icon={<TbGitPullRequest />}
                 text={"Pull requests"}
               />
             </li>
           </Link>
-          <Link to={"/footer"}>
-            <li>
+          <Link to={"/projects"}>
+            <li onClick={handleClose}>
               <IconWithText icon={<GoProjectSymlink />} text={"Projects"} />
             </li>
           </Link>
-          <Link to={"/footer"}>
-            <li>
+          <Link to={"/discussions"}>
+            <li onClick={handleClose}>
               <IconWithText
                 icon={<GoCommentDiscussion />}
                 text={"Discussions"}
               />
             </li>
           </Link>
-          <Link to={"/footer"}>
-            <li>
+          <Link to={"/codespaces"}>
+            <li onClick={handleClose}>
               <IconWithText icon={<GoCodespaces />} text={"Codespaces"} />
             </li>
           </Link>
           <Divider />
-          <Link to={"/footer"}>
-            <li>
+          <Link to={"/explore"}>
+            <li onClick={handleClose}>
               <IconWithText icon={<GoTelescope />} text={"Explore"} />
             </li>
           </Link>
-          <Link to={"/footer"}>
-            <li>
+          <Link to={"/marketplace"}>
+            <li onClick={handleClose}>
               <IconWithText icon={<FiGift />} text={"Marketplace"} />
             </li>
           </Link>

@@ -1,0 +1,109 @@
+.project-page {
+  margin: 0px 24px;
+}
+.project-page .project-body {
+  padding: 24px 16px;
+  display: flex;
+}
+.project-page .project-body .left {
+  margin-bottom: 15px;
+  padding-right: 32px;
+  min-width: 300px;
+}
+.project-page .project-body .left div.active {
+  background-color: #1c222b;
+  border-radius: 5px;
+  position: relative;
+}
+.project-page .project-body .left div.active::before {
+  position: absolute;
+  top: 4px;
+  width: 4px;
+  height: 24px;
+  margin-left: -8px;
+  content: "";
+  background: #2f81f7;
+  border-radius: 6px;
+}
+.project-page .project-body .left div:hover {
+  background-color: #1c222b;
+  border-radius: 5px;
+}
+.project-page .project-body .left div button {
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  height: 32px;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: white;
+  max-width: 300px;
+  border: none;
+}
+.project-page .project-body .left div button .text {
+  color: white;
+}
+.project-page .project-body .left div button .icon {
+  font-size: 18px;
+}
+.project-page .project-body .right {
+  width: 100%;
+}
+.project-page .project-body .right .welcome-cart {
+  border: 1px solid #30363d;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #0d1117;
+  background: url("../../../../assets/project-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-page .project-body .right .welcome-cart button {
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  height: 32px;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: white;
+  background-color: #1c222b;
+  border: 1px solid #30363d;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.project-page .project-body .right .welcome-cart p {
+  width: 465px;
+  line-height: 23px;
+}
+.project-page .project-body .right .create-new-project {
+  border: 1px solid #30363d;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #010409;
+  margin: 0 auto;
+}
+.project-page .project-body .right .create-new-project > div {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.project-page .project-body .right .create-new-project > div svg {
+  font-size: 20px;
+  color: #848d97;
+}
+.project-page .project-body .right .create-new-project > div p {
+  text-align: center;
+  color: #848d97;
+}
+.project-page .project-body .right .create-new-project > div p span {
+  color: #2f81f7;
+}
+.project-page .project-body .right .create-new-project > div button {
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  height: 32px;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: white;
+  background-color: #238636;
+}/*# sourceMappingURL=projects.css.map */

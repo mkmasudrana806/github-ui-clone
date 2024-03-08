@@ -1,0 +1,28 @@
+.recommondedActivity {
+  border: 1px solid #30363d;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #0d1117;
+}
+.recommondedActivity .user-activity {
+  display: flex;
+  justify-content: space-between;
+  color: #848d97;
+}
+.recommondedActivity .user-activity > div {
+  font-size: 14px;
+}
+.recommondedActivity .user-activity .activity-user-profile {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.recommondedActivity .activity-footer {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}/*# sourceMappingURL=recommonded.css.map */

@@ -1,0 +1,66 @@
+.releasedActivityCart {
+  border: 1px solid #30363d;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #0d1117;
+}
+.releasedActivityCart .user-activity {
+  display: flex;
+  justify-content: space-between;
+  color: #848d97;
+}
+.releasedActivityCart .user-activity .activity-user-profile {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.releasedActivityCart .inner {
+  margin-top: 8px;
+  border: none;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #1c222b;
+}
+.releasedActivityCart .inner .circle {
+  font-size: 10px;
+  margin-right: 3px;
+}
+.releasedActivityCart .inner .article {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.releasedActivityCart .inner .read-more {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.releasedActivityCart .contributors-grp {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.releasedActivityCart .reactions-grp {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.releasedActivityCart .reactions-grp button:nth-child(2),
+.releasedActivityCart .reactions-grp span:nth-child(1),
+.releasedActivityCart .reactions-grp button:nth-child(3),
+.releasedActivityCart .reactions-grp button:nth-child(4) {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  background: none;
+  color: #848d97;
+  padding: 4px;
+  border-radius: 50px;
+  border: 1px solid #30363d;
+}/*# sourceMappingURL=releasedActivity.css.map */

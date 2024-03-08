@@ -1,0 +1,57 @@
+.appHeader .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 34, 43, 0.5); /* Semi-transparent overlay */
+  z-index: 100; /* Ensure it's above other content */
+}
+.appHeader .appHeader-globalBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  height: 65px;
+  border-bottom: 1px solid #30363d;
+  color: #848d97;
+}
+.appHeader .appHeader-globalBar .appHeader-globalbar-start {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  flex: 1 1 auto;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.appHeader .appHeader-globalBar .appHeader-globalbar-start a {
+  height: 100%;
+}
+.appHeader .appHeader-globalBar .appHeader-globalbar-start a img {
+  height: 100%;
+  width: 100%;
+}
+.appHeader .appHeader-globalBar .appHeader-globalbar-end {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  flex: end;
+}
+.appHeader .appHeader-globalBar .appHeader-globalbar-end .appHeader-end-actions {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.appHeader .appHeader-globalBar .appHeader-globalbar-end .appHeader-end-actions .seperator {
+  transform: scale(0.3, 1.2);
+}
+.appHeader .appHeader-globalBar .appHeader-globalbar-end .appHeader-end-user {
+  height: 33px;
+  width: 33px;
+}
+.appHeader .appHeader-globalBar .appHeader-globalbar-end .appHeader-end-user svg {
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=navbar.css.map */

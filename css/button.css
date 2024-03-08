@@ -1,0 +1,16 @@
+.button {
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  height: 32px;
+  cursor: pointer;
+  padding: 0px 10px;
+  color: white;
+  background-color: #1c222b;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 16px;
+}
+.button:hover {
+  border: 1px solid #8b949e;
+  background-color: #30363d;
+}/*# sourceMappingURL=button.css.map */

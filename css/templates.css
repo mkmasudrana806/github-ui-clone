@@ -1,0 +1,24 @@
+.choose-templates {
+  border: 1px solid #30363d;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #0d1117;
+}
+.choose-templates .see-all {
+  color: #2f81f7;
+}
+.choose-templates .templates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 16px;
+  margin-top: 25px;
+}
+.choose-templates .template-cart {
+  border: 1px solid #30363d;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #0d1117;
+}
+.choose-templates .template-cart .details {
+  line-height: 20px;
+}/*# sourceMappingURL=templates.css.map */

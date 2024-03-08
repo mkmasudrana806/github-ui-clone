@@ -1,8 +1,10 @@
-@import "../../../assets/styles/styles.scss";
+@import "../../../../assets/styles/styles.scss";
 
-.issues-page {
-  margin: 0px 168px;
-  .issue-body {
+.discussion-page {
+  //   margin: 0px 168px;
+  max-width: 1010px;
+  margin: 0 auto;
+  .discussion-body {
     padding: 24px 16px 0px 16px;
     // subnav tabs
     .subnav {
@@ -14,6 +16,7 @@
         background-color: $bg-box-primary;
         padding-left: 16px;
         padding-right: 16px;
+        border: none;
         &:hover {
           background-color: $bg-box-secondary;
         }
@@ -23,49 +26,21 @@
           border-bottom-right-radius: 0px;
         }
         &:nth-child(2) {
-          border-radius: 0px;
-        }
-        &:nth-child(3) {
           border-left: none;
           border-top-left-radius: 0px;
           border-bottom-left-radius: 0px;
         }
       }
       .active {
-        background-color: $color-color-primary;
+        background-color: $bg-main;
+        border: 1px solid $border-primary;
+        border-radius: 5px;
       }
     }
-
-    // issue content
-    .issue-content {
+    // discussion content
+    .discussion-content {
       border: 1px solid $border-primary;
       border-radius: 6px;
-      background-color: $bg-box-primary;
-      // content head
-      .head {
-        background-color: $bg-box-secondary;
-        padding: 16px;
-        border-bottom: 1px solid $border-primary;
-        .issue-status {
-          .text {
-            color: white;
-          }
-          .icon svg {
-            color: white;
-            font-size: 16px;
-          }
-        }
-        .filter-options {
-          display: flex;
-          column-gap: 30px;
-          font-size: 13px;
-          color: $color-muted;
-          > div:hover {
-            color: $color-primary;
-            cursor: pointer;
-          }
-        }
-      }
       .content {
         margin: 0 auto;
         > div {
@@ -85,18 +60,6 @@
             }
           }
         }
-      }
-    }
-    .issue-footer {
-      color: $color-muted;
-      text-align: center;
-      span.protip {
-        color: $color-primary;
-        font-size: 14px;
-      }
-      .date {
-        color: $color-color-primary;
-        text-decoration: underline;
       }
     }
   }

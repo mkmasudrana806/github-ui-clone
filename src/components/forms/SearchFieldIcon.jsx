@@ -3,6 +3,7 @@ import { RiSearchLine } from "react-icons/ri";
 import { GoCommandPalette } from "react-icons/go";
 import "./InputField.scss";
 
+// icon + input field + icon
 // props format: size="200px" or %. startIcon={<Something />}, endIcon={<Something />}
 const SearchFieldIcon = ({
   size = "350px",

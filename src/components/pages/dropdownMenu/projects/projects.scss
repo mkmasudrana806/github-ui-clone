@@ -1,0 +1,98 @@
+@import "../../../../assets/styles/styles.scss";
+
+.project-page {
+  margin: 0px 24px;
+  .project-body {
+    padding: 24px 16px;
+    display: flex;
+
+    .left {
+      margin-bottom: 15px;
+      padding-right: 32px;
+      min-width: 300px;
+
+      div.active {
+        background-color: $bg-box-secondary;
+        border-radius: 5px;
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 4px;
+          width: 4px;
+          height: 24px;
+          margin-left: -8px;
+          content: "";
+          background: $color-color-primary;
+          border-radius: 6px;
+        }
+      }
+      div {
+        &:hover {
+          background-color: $bg-box-secondary;
+          border-radius: 5px;
+        }
+        button {
+          @include basic-button;
+          max-width: 300px;
+          border: none;
+          .text {
+            color: $color-primary;
+          }
+          .icon {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    // right side
+    .right {
+      width: 100%;
+      // welcome cart
+      .welcome-cart {
+        @include borderBox;
+        background: url("../../../../assets/project-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        button {
+          @include basic-button;
+          background-color: $bg-box-secondary;
+          border: 1px solid $border-primary;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        p {
+          width: 465px;
+          line-height: 23px;
+        }
+      }
+      // create new github project cart
+      .create-new-project {
+        @include borderBox(yes, $bg-main);
+        margin: 0 auto;
+        > div {
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 20px;
+          svg {
+            font-size: 20px;
+            color: $color-muted;
+          }
+          p {
+            text-align: center;
+            color: $color-muted;
+            span {
+              color: $color-color-primary;
+            }
+          }
+          button {
+            @include basic-button;
+            background-color: #238636;
+          }
+        }
+      }
+    }
+  }
+}

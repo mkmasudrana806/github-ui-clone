@@ -1,0 +1,23 @@
+@import "../../../../../assets/styles/styles.scss";
+
+// explore templates
+.choose-templates {
+  @include borderBox;
+  .see-all {
+    color: $color-color-primary;
+  }
+  .templates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    gap: 16px;
+    margin-top: 25px;
+  }
+  .template-cart {
+    @include borderBox;
+    .details {
+      line-height: 20px;
+    }
+  }
+}
+
+// template cart style. same stylesheet for both templates and templateCart.

@@ -1,22 +1,66 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../components/pages/home/Home";
-import Footer from "../components/footer/Footer";
-import Issues from "../components/pages/issues/Issues";
-import PullRequest from "../components/pages/pullRequest/PullRequest";
+import Discussions from "../components/pages/dropdownMenu/discussions/Discussions";
+import Issues from "../components/pages/dropdownMenu/issues/Issues";
+import PullRequest from "../components/pages/dropdownMenu/pullRequest/PullRequest";
+import Projects from "../components/pages/dropdownMenu/projects/Projects";
+import CodeSpaces from "../components/pages/dropdownMenu/codespaces/CodeSpaces";
+import Button from "../components/buttons/Button";
+import NumberCounter from "../components/utilityComponents/NumberCounter";
+import CodespaceDetails from "../components/pages/dropdownMenu/codespaces/CodespaceDetails";
+import Templates from "../components/pages/dropdownMenu/codespaces/templates/Templates";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-        {
-          path: "/home",
-          element: <Home />,
-        },
       {
         path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/issues",
+        element: <Issues />,
+      },
+      {
+        path: "/pulls",
         element: <PullRequest />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/discussions",
+        element: <Discussions />,
+      },
+      {
+        path: "/codespaces",
+        element: <CodeSpaces />,
+        children: [
+          {
+            path: "/codespaces/",
+            element: <CodespaceDetails />,
+          },
+          {
+            path: "/codespaces/templates",
+            element: <Templates />,
+          },
+          {
+            path: "/codespaces/created",
+            element: <CodespaceDetails />,
+          },
+        ],
+      },
+      {
+        path: "marketplace",
+        element: <Button />,
+      },
+      {
+        path: "explore",
+        element: <NumberCounter />,
       },
     ],
   },

@@ -1,36 +1,35 @@
-import SearchFieldLeftIcon from "../../forms/SearchFieldLeftIcon";
-import "./pullRequest.scss";
+import "./issues.scss";
 import { RiSearchLine } from "react-icons/ri";
-import IconWithText from "../../iconsButtons/IconWithText";
 import { FaRegDotCircle } from "react-icons/fa";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
+import SearchFieldLeftIcon from "../../../forms/SearchFieldLeftIcon";
+import IconWithText from "../../../iconsButtons/IconWithText";
 
-const PullRequest = () => {
+const Issues = () => {
   return (
-    <div className="pullRequest-page">
-      <div className="pullRequest-body">
+    <div className="issues-page">
+      <div className="issue-body">
         {/* subnav tabs  */}
         <div className="flex-between mb-1">
           <div className="subnav">
             <button className="active">Created</button>
             <button>Assigned</button>
             <button>Mentioned</button>
-            <button>Review Requests</button>
           </div>
           <SearchFieldLeftIcon
             endIcon={<RiSearchLine />}
             size="100%"
-            text="Search all pullRequest"
+            text="Search all issues"
           />
         </div>
 
-        {/* pullRequest content  */}
-        <div className="pullRequest-content">
+        {/* issue content  */}
+        <div className="issue-content">
           {/* content head  */}
           <div className="head flex-between">
             <div className="flex-left">
-              <div className="pullRequest-status">
+              <div className="issue-status">
                 <IconWithText icon={<FaRegDotCircle />} text={"0 Open"} />
               </div>
               <IconWithText icon={<IoCheckmarkSharp />} text={"0 Closed"} />
@@ -62,14 +61,15 @@ const PullRequest = () => {
             </div>
           </div>
         </div>
-        <p className="text-normal pullRequest-footer mt-1">
+        <p className="text-normal issue-footer mt-1">
           {" "}
-          <span className="protip">ProTip!</span> Exclude your own pull request with
-          <span className="date"> -author:mkmasudrana806.</span>
+          <span className="protip">ProTip!</span> What’s not been updated in a
+          month:
+          <span className="date"> updated: 2024-02-07.</span>
         </p>
       </div>
     </div>
   );
 };
 
-export default PullRequest;
+export default Issues;

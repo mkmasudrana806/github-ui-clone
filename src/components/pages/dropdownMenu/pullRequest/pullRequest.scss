@@ -1,0 +1,106 @@
+@import "../../../../assets/styles/styles.scss";
+
+.pullRequest-page {
+  // margin: 0px 168px;
+  max-width: 1010px;
+  margin: 0 auto;
+  .pullRequest-body {
+    padding: 24px 16px 0px 16px;
+    // subnav tabs
+    .subnav {
+      min-width: max-content;
+      margin-right: 16px;
+      button {
+        font-weight: bold;
+        @include basic-button;
+        background-color: $bg-box-primary;
+        padding-left: 16px;
+        padding-right: 16px;
+        &:hover {
+          background-color: $bg-box-secondary;
+        }
+        &:nth-child(1) {
+          border-right: none;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          border-radius: 0px;
+        }
+        &:nth-child(4) {
+          border-left: none;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+        }
+      }
+      .active {
+        background-color: $color-color-primary;
+      }
+    }
+
+    // pullRequest content
+    .pullRequest-content {
+      border: 1px solid $border-primary;
+      border-radius: 6px;
+      background-color: $bg-box-primary;
+      // content head
+      .head {
+        padding: 16px;
+        border-bottom: 1px solid $border-primary;
+        background-color: $bg-box-secondary;
+        .pullRequest-status {
+          .text {
+            color: white;
+          }
+          .icon svg {
+            color: white;
+            font-size: 16px;
+          }
+        }
+        .filter-options {
+          display: flex;
+          column-gap: 30px;
+          font-size: 13px;
+          color: $color-muted;
+          > div:hover {
+            color: $color-primary;
+            cursor: pointer;
+          }
+        }
+      }
+      .content {
+        margin: 0 auto;
+        > div {
+          padding: 80px 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 20px;
+          svg {
+            font-size: 20px;
+            color: $color-muted;
+          }
+          p {
+            color: $color-muted;
+            span {
+              color: $color-color-primary;
+            }
+          }
+        }
+      }
+    }
+    .pullRequest-footer {
+      color: $color-muted;
+      text-align: center;
+      span.protip {
+        color: $color-primary;
+        font-size: 14px;
+      }
+      .date {
+        color: $color-color-primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
