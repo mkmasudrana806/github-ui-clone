@@ -1,0 +1,61 @@
+@import "../../../../assets/styles/styles.scss";
+
+.explore-page {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 32px;
+  max-width: 1250px;
+  margin: auto;
+  // left side profile cart
+  .left {
+    .left-profile-cart {
+      border: 1px solid $border-primary;
+      border-radius: 5px;
+      .user-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        .email {
+          color: $color-muted;
+          font-weight: 100;
+        }
+      }
+      p {
+        padding: 10px 16px;
+      }
+    }
+  }
+  // right side
+  .right {
+    .explore-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      column-gap: 32px;
+      // center part
+      .star-repositories {
+        .video {
+          iframe {
+            border-radius: 5px;
+          }
+          border: 1px solid $border-primary;
+          border-radius: 5px;
+        }
+      }
+      // right side part
+      .trending-repositories {
+        height: max-content;
+        .see-more {
+          font-size: 12px;
+          padding: 6px 16px 16px 16px;
+        }
+        .repo-short-cart {
+          padding: 0px 16px;
+          .title {
+            color: $color-color-primary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../../../assets/styles/styles.scss";
+
+.explore-navbar {
+  ul {
+    display: flex;
+    column-gap: 20px;
+    height: 55px;
+    li {
+      list-style: none;
+      cursor: pointer;
+      height: 100%;
+      border-bottom: 2px solid transparent;
+      &:has(a.active) {
+        border-bottom: 2px solid $color-color-primary;
+      }
+      a {
+        text-decoration: none;
+        color: $color-muted;
+        font-size: 14px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      &:hover a {
+        color: $color-primary;
+      }
+      &:hover {
+        border-bottom: 2px solid $border-primary;
+      }
+    }
+  }
+}

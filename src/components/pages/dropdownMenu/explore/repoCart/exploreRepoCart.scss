@@ -1,0 +1,38 @@
+@import "../../../../../assets/styles/styles.scss";
+
+.explore-repo-cart {
+  border-radius: 5px;
+  overflow: hidden;
+  .cart-image {
+    width: 100%;
+  }
+  .header {
+    padding: 16px 16px 0px 16px;
+    border-bottom: 1px solid $border-primary;
+    background-color: $bg-box-secondary;
+    .user-star-options .text {
+      font-size: 18px;
+      color: $color-color-primary;
+    }
+    .tabs {
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      .code {
+        padding: 6px 7px 3px 7px;
+        border-top: 1px solid $border-primary;
+        border-left: 1px solid $border-primary;
+        border-right: 1px solid $border-primary;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: $bg-box-primary;
+      }
+    }
+  }
+  .tags {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    margin-top: 15px;
+  }
+}

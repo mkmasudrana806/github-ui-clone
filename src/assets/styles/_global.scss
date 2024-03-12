@@ -24,6 +24,25 @@ body {
   cursor: pointer;
 }
 
+// text muted color
+.text-muted {
+  color: $color-muted;
+}
+
+// padding. largest padding
+.p-1 {
+  padding: 16px;
+}
+
+// primary border with primary color
+.border-primary {
+  border: 1px solid $border-primary;
+}
+// color text. blue color
+.text-color {
+  color: $color-color-primary;
+}
+
 // vertically aligned and flex between
 .flex-between {
   display: flex;

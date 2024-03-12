@@ -1,0 +1,11 @@
+@import "../../assets/styles/variables";
+
+.tag {
+  padding: 3px 10px;
+  background-color: #6db4fc2d;
+  font-size: 12px;
+  width: max-content;
+  border-radius: 50px;
+  color: $color-color-primary;
+  border: none;
+}

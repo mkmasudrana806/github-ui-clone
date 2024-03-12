@@ -10,6 +10,7 @@ import Button from "../components/buttons/Button";
 import NumberCounter from "../components/utilityComponents/NumberCounter";
 import CodespaceDetails from "../components/pages/dropdownMenu/codespaces/CodespaceDetails";
 import Templates from "../components/pages/dropdownMenu/codespaces/templates/Templates";
+import ExploreLayout from "../components/pages/dropdownMenu/explore/ExploreLayout";
 
 export const router = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ export const router = createBrowserRouter([
       {
         path: "/discussions",
         element: <Discussions />,
-      },
+      }, // codespaces
       {
         path: "/codespaces",
         element: <CodeSpaces />,
@@ -54,13 +55,22 @@ export const router = createBrowserRouter([
           },
         ],
       },
+      // explore
       {
-        path: "marketplace",
-        element: <Button />,
+        path: "explore",
+        element: <ExploreLayout />,
       },
       {
         path: "explore",
-        element: <NumberCounter />,
+        element: <ExploreLayout />,
+      },
+      {
+        path: "topics",
+        element: <ExploreLayout />,
+      },
+      {
+        path: "marketplace",
+        element: <Button />,
       },
     ],
   },
