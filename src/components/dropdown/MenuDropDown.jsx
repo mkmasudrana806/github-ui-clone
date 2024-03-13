@@ -11,10 +11,10 @@ import { GoCommentDiscussion } from "react-icons/go";
 import { GoCodespaces } from "react-icons/go";
 import { GoTelescope } from "react-icons/go";
 import { FiGift } from "react-icons/fi";
-import Divider from "../Divider";
 import InputField from "../forms/InputField";
 import ButtonImg from "../iconsButtons/ButtonImg";
 import { Link } from "react-router-dom";
+import Divider from "../utilityComponents/Divider";
 
 const MenuDropDown = ({ handleClose }) => {
   return (

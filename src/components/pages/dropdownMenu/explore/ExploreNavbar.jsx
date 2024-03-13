@@ -6,7 +6,7 @@ const ExploreNavbar = () => {
     <div className="explore-navbar">
       <ul>
         <li>
-          <NavLink  end to={"/explore"}>
+          <NavLink end to={"/explore"}>
             Explore
           </NavLink>
         </li>

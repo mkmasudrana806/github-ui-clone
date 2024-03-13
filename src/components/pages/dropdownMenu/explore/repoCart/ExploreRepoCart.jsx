@@ -7,7 +7,8 @@ import { IoCode } from "react-icons/io5";
 import { TbGitPullRequest } from "react-icons/tb";
 import { GoCommentDiscussion } from "react-icons/go";
 import Tag from "../../../../tags/Tag";
-import Divider from "../../../../Divider";
+import Divider from "../../../../utilityComponents/Divider";
+// import Divider from "../../../../Divider";
 
 const ExploreRepoCart = ({ Img = true }) => {
   return (

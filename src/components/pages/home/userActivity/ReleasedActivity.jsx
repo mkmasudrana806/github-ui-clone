@@ -8,7 +8,8 @@ import { SlOptions } from "react-icons/sl";
 import { FaCircle } from "react-icons/fa";
 import { MdOutlineEmojiEmotions } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
-import Divider from "../../../Divider";
+import Divider from "../../../utilityComponents/Divider";
+ 
 
 const ReleasedActivity = () => {
   return (

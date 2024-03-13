@@ -1,0 +1,19 @@
+@use "../../../../../assets/styles/variables" as var;
+.browse {
+  border-bottom: 1px solid var.$border-primary;
+  h1{
+    font-size: 30px;
+  }
+  p {
+    font-size: 14px;
+    color: var.$color-muted;
+  }
+  div {
+    max-width: 1010px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 16px;
+  }
+  height: 162px;
+  background-color: var.$bg-box-secondary;
+}

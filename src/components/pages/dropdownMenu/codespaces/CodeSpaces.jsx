@@ -1,11 +1,11 @@
 import "./codeSpaces.scss";
 import IconWithText from "../../../iconsButtons/IconWithText";
-import Divider from "../../../Divider";
 import { GoCodespaces } from "react-icons/go";
 import { GoRepoTemplate } from "react-icons/go";
 import NumberCounter from "../../../utilityComponents/NumberCounter";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
+import Divider from "../../../utilityComponents/Divider";
 
 const CodeSpaces = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);

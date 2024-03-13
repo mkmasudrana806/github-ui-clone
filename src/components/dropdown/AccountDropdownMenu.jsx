@@ -4,7 +4,6 @@ import ImageCircle from "../image/ImageCircle";
 import { RxCross2 } from "react-icons/rx";
 import userLogo from "../../assets/user.jpg";
 import IconWithText from "../iconsButtons/IconWithText";
-import Divider from "../Divider";
 import { MdOutlineEmojiEmotions } from "react-icons/md";
 import { LuUser2 } from "react-icons/lu";
 import { LuUserPlus2 } from "react-icons/lu";
@@ -21,6 +20,7 @@ import { AiOutlineExperiment } from "react-icons/ai";
 import { LuSettings } from "react-icons/lu";
 import { FiBookOpen } from "react-icons/fi";
 import { LuUsers2 } from "react-icons/lu";
+import Divider from "../utilityComponents/Divider";
 
 const AccountDropdownMenu = ({ handleCloseProfile }) => {
   return (

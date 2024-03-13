@@ -11,6 +11,8 @@ import NumberCounter from "../components/utilityComponents/NumberCounter";
 import CodespaceDetails from "../components/pages/dropdownMenu/codespaces/CodespaceDetails";
 import Templates from "../components/pages/dropdownMenu/codespaces/templates/Templates";
 import ExploreLayout from "../components/pages/dropdownMenu/explore/ExploreLayout";
+import Topics from "../components/pages/dropdownMenu/explore/exploreNavPages/Topics";
+import Trendings from "../components/pages/dropdownMenu/explore/exploreNavPages/Trendings";
 
 export const router = createBrowserRouter([
   {
@@ -55,18 +57,18 @@ export const router = createBrowserRouter([
           },
         ],
       },
-      // explore
+      // explore page
       {
-        path: "explore",
+        path: "/explore",
         element: <ExploreLayout />,
       },
       {
-        path: "explore",
-        element: <ExploreLayout />,
+        path: "/topics",
+        element: <Topics />,
       },
       {
-        path: "topics",
-        element: <ExploreLayout />,
+        path: "/trending",
+        element: <Trendings />,
       },
       {
         path: "marketplace",

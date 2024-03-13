@@ -3,8 +3,8 @@ import "./exploreRepo.scss";
 import { FiStar } from "react-icons/fi";
 import { FaCircle } from "react-icons/fa";
 import IconWithText from "../../../iconsButtons/IconWithText";
-import Divider from "../../../Divider";
-
+import Divider from "../../../utilityComponents/Divider";
+ 
 const ExploreRepositories = () => {
   return (
     <div className="explore-repo mt-2">
