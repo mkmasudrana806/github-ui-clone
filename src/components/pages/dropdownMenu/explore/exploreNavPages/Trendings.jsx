@@ -6,6 +6,19 @@ import Tag from "../../../../tags/Tag";
 import Divider from "../../../../utilityComponents/Divider";
 import ButtonIcon from "../../../../iconsButtons/ButtonIcon";
 import TopicIntroCart from "./TopicIntroCart";
+import SearchFieldLeftIcon from "../../../../forms/SearchFieldLeftIcon";
+import { RiSearchLine } from "react-icons/ri";
+import { FaRegDotCircle } from "react-icons/fa";
+import { IoMdArrowDropdown } from "react-icons/io";
+import IconWithText from "../../../../iconsButtons/IconWithText";
+import { IoCheckmarkSharp } from "react-icons/io5";
+import { TiHeartOutline } from "react-icons/ti";
+import ButtonGroup from "../../../../iconsButtons/ButtonGroup";
+import { GoRepoTemplate } from "react-icons/go";
+import { FaCodeBranch } from "react-icons/fa6";
+import { FaCircle } from "react-icons/fa";
+import ImageCircle from "../../../../image/ImageCircle";
+import userLogo from "../../../../../assets/user.jpg";
 
 const Trendings = () => {
   const intro = {
@@ -20,83 +33,40 @@ const Trendings = () => {
       </div>
       {/* intro box  */}
       <TopicIntroCart intro={intro} />
-      {/* trendings carts  */}
-      <div className="carts-trendings  ">
-        <div className="carts-container">
-          {/* single cart  */}
-          <div className="cart">
-            <img src={logo} alt="" />
-            <h3>React</h3>
-            <p className="text-small mt-3">
-              React is an open source JavaScript library used for desiging user
-              interfaces.
-            </p>
-            <button>
-              <TiStarOutline />
-            </button>
+      {/* trending repositories and developers  */}
+      <div className="trending-repositories">
+        {/* trending content  */}
+        <div className="trending-content">
+          {/* content head  */}
+          <div className="head flex-between">
+            <div className="subnav">
+              <button className="active">Repositories</button>
+              <button>Developers</button>
+            </div>
+            <div className="filter-options">
+              <div>
+                Spoken Language: Any
+                <IoMdArrowDropdown />
+              </div>
+              <div>
+                Language: Any
+                <IoMdArrowDropdown />
+              </div>
+              <div>
+                Date range: Today
+                <IoMdArrowDropdown />
+              </div>
+            </div>
           </div>
-          {/* single cart  */}
-          <div className="cart">
-            <img src={logo} alt="" />
-            <h3>React</h3>
-            <p className="text-small mt-3">
-              React is an open source JavaScript library used for desiging user
-              interfaces.
-            </p>
-            <button>
-              <TiStarOutline />
-            </button>
-          </div>
-          {/* single cart  */}
-          <div className="cart">
-            <img src={logo} alt="" />
-            <h3>React</h3>
-            <p className="text-small mt-3">
-              React is an open source JavaScript library used for desiging user
-              interfaces.
-            </p>
-            <button>
-              <TiStarOutline />
-            </button>
-          </div>
-        </div>
-      </div>
-      {/* featured trendings and popular trendings */}
-      <div className="featured-trendings-tags">
-        <div className="featured-trendings">
-          <h3>All featured trendings</h3>
-          <div className="featured-carts">
-            <FeaturedTopicCart />
+          {/* content body  */}
+          <div className="containers-repo">
+            <RepoTopicCart />
             <Divider />
-            <FeaturedTopicCart />
+            <RepoTopicCart />
             <Divider />
-            <FeaturedTopicCart />
+            <RepoTopicCart />
             <Divider />
-            <FeaturedTopicCart />
-            <Divider />
-            <FeaturedTopicCart />
-            <Divider />
-            <FeaturedTopicCart />
-            <Divider />
-            <FeaturedTopicCart />
-            <Divider />
-            <FeaturedTopicCart />
-            <Divider />
-            <FeaturedTopicCart />
-            <Divider />
-            <FeaturedTopicCart />
-          </div>
-        </div>
-        {/* popular tags  */}
-        <div className="featured-tags">
-          <p className="text-medium mb-3">Popular trendings</p>
-          <div className="tags">
-            <Tag text={"react"} />
-            <Tag text={"javascript"} />
-            <Tag text={"python"} />
-            <Tag text={"config"} />
-            <Tag text={"tailwindcss"} />
-            <Tag text={"typscript"} />
+            <RepoTopicCart />
           </div>
         </div>
       </div>
@@ -106,20 +76,41 @@ const Trendings = () => {
 
 export default Trendings;
 
-const FeaturedTopicCart = () => {
+const RepoTopicCart = () => {
   return (
-    <div className="cart flex-left mt-1 mb-1">
-      <div className="image">
-        <img src={logo} alt="" />
-      </div>
+    <div className="cart flex-left">
       <div>
         <div className="flex-between">
-          <h3>Ajax</h3>
-          <ButtonIcon />
+          <div className="repo-link flex-left">
+            <GoRepoTemplate />
+            <p className="text-medium">danielmiessler / fabric</p>
+          </div>
+          <div className="flex-left">
+            <div className="sponsoor-btn">
+              <ButtonIcon Img={<TiHeartOutline />} text="Sponsoor" />
+            </div>
+            <ButtonGroup />
+          </div>
         </div>
-        <p className="text-small mt-5">
-          Ajax is a technique for creating interactive web applications.
+        <p className="text-small description mt-5">
+          fabric is an open-source framework for augmenting humans using AI. It
+          provides a modular framework for solving specific problems using a
+          crowdsourced set of AI prompts that can be used anywhere.
         </p>
+        <div className="cart-footer flex-between mt-5">
+          <div className="flex-left left-footer">
+            <IconWithText color="yellow" icon={<FaCircle />} text={"Python"} />
+            <IconWithText icon={<TiStarOutline />} text={"7428"} />
+            <IconWithText icon={<FaCodeBranch />} text={"699"} />
+            <p className="flex-left text-small">
+              Build By:
+              <ImageCircle Img={userLogo} size={"16"} />
+              <ImageCircle Img={userLogo} size={"16"} />
+              <ImageCircle Img={userLogo} size={"16"} />
+            </p>
+          </div>
+          <IconWithText icon={<TiStarOutline />} text={"468 stars today"} />
+        </div>
       </div>
     </div>
   );

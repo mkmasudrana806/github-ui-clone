@@ -35,6 +35,9 @@
       }
       .active {
         background-color: $color-color-primary;
+        &:hover {
+          background-color: $color-color-primary;
+        }
       }
     }
 

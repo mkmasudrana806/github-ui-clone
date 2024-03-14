@@ -8,4 +8,9 @@
   border-radius: 50px;
   color: $color-color-primary;
   border: none;
+  &:hover {
+    cursor: pointer;
+    color: $color-primary;
+    background-color: $color-color-primary;
+  }
 }
