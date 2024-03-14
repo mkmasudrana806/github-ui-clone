@@ -1,6 +1,6 @@
 @import "../../assets/styles/styles.scss";
 
-//ButtonIcon: button with icon styles
+//ButtonIcon: icon + text button
 .btn-icon {
   @include basic-button(28px);
   display: inline-flex;
@@ -10,10 +10,12 @@
   padding: 0px 8px;
   border: none;
   color: $color-primary;
+  svg {
+    color: $color-muted;
+  }
 }
 
 // ButtonImg:
-
 .icon-text-btn {
   @include flex-align-center;
 }

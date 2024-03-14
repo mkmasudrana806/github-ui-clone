@@ -1,17 +1,11 @@
 import "./trending.scss";
 import ExploreNavbar from "../ExploreNavbar";
-import logo from "../../../../../assets/logo.png";
 import { TiStarOutline } from "react-icons/ti";
-import Tag from "../../../../tags/Tag";
 import Divider from "../../../../utilityComponents/Divider";
 import ButtonIcon from "../../../../iconsButtons/ButtonIcon";
 import TopicIntroCart from "./TopicIntroCart";
-import SearchFieldLeftIcon from "../../../../forms/SearchFieldLeftIcon";
-import { RiSearchLine } from "react-icons/ri";
-import { FaRegDotCircle } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import IconWithText from "../../../../iconsButtons/IconWithText";
-import { IoCheckmarkSharp } from "react-icons/io5";
 import { TiHeartOutline } from "react-icons/ti";
 import ButtonGroup from "../../../../iconsButtons/ButtonGroup";
 import { GoRepoTemplate } from "react-icons/go";

@@ -21,6 +21,9 @@
       gap: 32px;
       // single cart
       .cart {
+        h3:hover {
+          color: $color-color-primary;
+        }
         padding: 32px;
         border: 1px solid $border-primary;
         border-radius: 5px;
@@ -30,8 +33,8 @@
           position: absolute;
           background-color: transparent;
           border: none;
-          font-size: 25px;
-          color: white;
+          font-size: 23px;
+          color: $color-muted;
           top: 16px;
           right: 16px;
         }
@@ -43,12 +46,13 @@
         &:hover {
           transform: scale(1.04);
           transition: 0.5s;
+          cursor: pointer;
         }
       }
     }
   }
 
-  // featured topics
+  // featured topics and tags section
   .featured-topics-tags {
     padding: 0 16px;
     max-width: 1010px;
@@ -67,15 +71,38 @@
           .image {
             height: 64px;
             width: 64px;
+            overflow: hidden;
+            border-radius: 5px;
             img {
               width: 100%;
+            }
+            .no-logo {
+              background-color: $bg-box-secondary;
+              height: 100%;
+              width: 100%;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
             }
           }
           .btn-icon {
             background-color: $bg-box-secondary;
             border: 1px solid $border-primary;
           }
+          div {
+            button {
+              svg {
+                font-size: 18px;
+              }
+            }
+          }
         }
+      }
+      .read-more-btn {
+        @include basic-button;
+        width: 100%;
+        color: $color-color-primary;
+        background-color: $bg-box-primary;
       }
     }
     // popular tags
