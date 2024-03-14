@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ExploreNavbar from "../ExploreNavbar";
 import "./topics.scss";
 import { TiStarOutline } from "react-icons/ti";
@@ -6,7 +7,7 @@ import Divider from "../../../../utilityComponents/Divider";
 import ButtonIcon from "../../../../iconsButtons/ButtonIcon";
 import TopicIntroCart from "./TopicIntroCart";
 // data import from data folder
-import { featuredTopics, intro, topics } from "./data/data";
+import { featuredTopics, topicsTntro, topics } from "./data/data";
 
 const Topics = () => {
   return (
@@ -17,7 +18,7 @@ const Topics = () => {
       </div>
 
       {/* intro box  */}
-      <TopicIntroCart intro={intro} />
+      <TopicIntroCart intro={topicsTntro} />
 
       {/* topics carts  */}
       <div className="carts-topics  ">
@@ -26,7 +27,7 @@ const Topics = () => {
           {topics.map((topic) => (
             <div key={topic.id} className="cart">
               <img src={topic.image} alt="" />
-              <h3>React</h3>
+              <h3>{topic.name}</h3>
               <p className="text-small mt-3">{topic.description}</p>
               <button>
                 <TiStarOutline />
@@ -75,7 +76,7 @@ const Topics = () => {
 export default Topics;
 
 const FeaturedTopicCart = ({ topic }) => {
-  const { id, title, description, logo } = topic;
+  const { title, description, logo } = topic;
   return (
     <div className="cart flex-left mt-1 mb-1">
       <div className="image">

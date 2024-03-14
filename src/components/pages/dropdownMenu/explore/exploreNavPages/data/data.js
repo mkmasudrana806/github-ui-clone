@@ -1,10 +1,21 @@
 // object for intro component
-const intro = {
+const topicsTntro = {
   title: "Topics",
   intro: "Browse popular topics on GitHub.",
 };
 
-// array of object for topics cart
+const trendingsTntro = {
+  title: "Trending",
+  intro: "See what the GitHub community is most excited about today.",
+};
+
+const collectionsTntro = {
+  title: "Collections",
+  intro:
+    "Curated lists and insight into burgeoning industries, topics, and communities.",
+};
+
+// array of object for topics, trendings events, collections and sponsors
 const topics = [
   {
     id: 1,
@@ -63,4 +74,73 @@ const featuredTopics = [
   },
 ];
 
-export { intro, topics, featuredTopics };
+// array of object for collections cart
+const collections = [
+  {
+    id: 1,
+    name: "Game Engine",
+    image: "",
+    description: "Frameworks for building games across multiple platforms.",
+  },
+  {
+    id: 2,
+    name: "Learn to code",
+    image:
+      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/collections/learn-to-code/learn-to-code.png",
+    description: "Resources to help people learn to code",
+  },
+  {
+    id: 3,
+    name: "Pixel Art tolls",
+    image:
+      "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/collections/pixel-art-tools/pixel-art-tools.png",
+    description:
+      "Creating pixel art for fun or animated sprites for a game? The digital artist in you will love these apps and tools!",
+  },
+];
+// all featured Collections
+const featuredCollections = [
+  {
+    id: 1,
+    logo: "",
+    title: "Clean code linters",
+    description:
+      "Make sure your code matches your style guide with these essential code linters.",
+  },
+  {
+    id: 2,
+    logo: "",
+    title: "Open journalism",
+    description:
+      "See how publications and data-driven journalists use open source to power their newsroom and ensure information is reported fairly and accurately.",
+  },
+  {
+    id: 3,
+    logo: "",
+    title: "Design essentials",
+    description:
+      "This collection of design libraries are the best on the web, and will complete your toolset for designing stunning products.",
+  },
+  {
+    id: 4,
+    logo: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/collections/github-pages-examples/github-pages-examples.png",
+    title: "GitHub Pages examples",
+    description:
+      "Fine examples of projects using GitHub Pages (https://pages.github.com).",
+  },
+];
+
+export {
+  // all page intro
+  topicsTntro,
+  trendingsTntro,
+  collectionsTntro,
+
+  // all page carts
+  topics,
+  collections,
+
+  // all page featured carts
+  featuredTopics,
+  featuredCollections,
+};

@@ -13,6 +13,7 @@ import Templates from "../components/pages/dropdownMenu/codespaces/templates/Tem
 import ExploreLayout from "../components/pages/dropdownMenu/explore/ExploreLayout";
 import Topics from "../components/pages/dropdownMenu/explore/exploreNavPages/Topics";
 import Trendings from "../components/pages/dropdownMenu/explore/exploreNavPages/Trendings";
+import Collections from "../components/pages/dropdownMenu/explore/exploreNavPages/Collections";
 
 export const router = createBrowserRouter([
   {
@@ -71,8 +72,8 @@ export const router = createBrowserRouter([
         element: <Trendings />,
       },
       {
-        path: "marketplace",
-        element: <Button />,
+        path: "/collections",
+        element: <Collections />,
       },
     ],
   },

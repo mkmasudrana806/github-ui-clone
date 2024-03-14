@@ -1,0 +1,103 @@
+@import "../../../../../assets/styles/styles.scss";
+
+.collections {
+  .navbar {
+    background-color: $bg-box-primary;
+    .explore-navbar {
+      max-width: 1010px;
+      margin: auto;
+      padding: 0px 16px;
+    }
+  }
+  .carts-collections {
+    max-width: 1010px;
+    margin: auto;
+    // carts container
+    .carts-container {
+      padding: 0px 16px;
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+      // single cart
+      .cart {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        h3:hover {
+          color: $color-color-primary;
+        }
+        padding: 32px;
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+        img {
+          height: 64px;
+          width: 64px;
+          margin-bottom: 15px;
+          border-radius: 5px;
+        }
+        &:hover {
+          transform: scale(1.04);
+          transition: 0.5s;
+          cursor: pointer;
+        }
+        .no-image {
+          height: 64px;
+          width: 64px;
+          background-color: $bg-box-secondary;
+          margin: 0 auto;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  // featured collections and tags section
+  .featured-collections {
+    padding: 0 16px;
+    max-width: 760px;
+    margin: 32px auto;
+    // featured carts
+    .featured-carts {
+      .cart {
+        .image {
+          height: 64px;
+          width: 64px;
+          overflow: hidden;
+          border-radius: 5px;
+          img {
+            width: 100%;
+          }
+          .no-logo {
+            background-color: $bg-box-secondary;
+            height: 100%;
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .btn-icon {
+          background-color: $bg-box-secondary;
+          border: 1px solid $border-primary;
+        }
+        div {
+          button {
+            svg {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .read-more-btn {
+      @include basic-button;
+      width: 100%;
+      color: $color-color-primary;
+      background-color: $bg-box-primary;
+    }
+  }
+}
