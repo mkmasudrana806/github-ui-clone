@@ -14,6 +14,16 @@ const collectionsTntro = {
   intro:
     "Curated lists and insight into burgeoning industries, topics, and communities.",
 };
+const eventsTntro = {
+  title: "Events",
+  intro:
+    "Connect with the GitHub community at conferences, meetups, and hackathons around the world.",
+};
+
+const sponsorsTntro = {
+  title: "Explore GitHub Sponsors",
+  intro: "Fund the work of developers and projects you depend on.",
+};
 
 // array of object for topics, trendings events, collections and sponsors
 const topics = [
@@ -135,6 +145,8 @@ export {
   topicsTntro,
   trendingsTntro,
   collectionsTntro,
+  eventsTntro,
+  sponsorsTntro,
 
   // all page carts
   topics,

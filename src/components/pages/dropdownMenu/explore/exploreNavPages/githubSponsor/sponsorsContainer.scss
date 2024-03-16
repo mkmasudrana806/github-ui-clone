@@ -1,0 +1,85 @@
+@import "../../../../../../assets/styles/styles.scss";
+
+// content left side
+.left {
+  flex: 1 0 500px;
+  .most-viewed {
+    button {
+      @include basic-button(28px);
+      background-color: $bg-box-secondary;
+      min-width: max-content;
+    }
+  }
+  .get-started {
+    padding: 8px 16px;
+    border-radius: 5px;
+    p svg {
+      color: rgb(248, 13, 248);
+      font-size: 18px;
+    }
+    button {
+      @include basic-button;
+      background-color: $bg-box-secondary;
+    }
+  }
+  // sponsor cart containers
+  .sponsors-container {
+    > div {
+      .divider {
+        margin: 0px;
+      }
+    }
+    .sponsor-cart {
+      padding: 16px;
+      h3:hover {
+        color: $color-color-primary;
+        text-decoration: underline;
+      }
+      button {
+        @include basic-button;
+        background-color: $bg-box-secondary;
+      }
+      > p {
+        color: $color-muted;
+        svg {
+          color: $color-primary;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  // paginations
+  .paginations {
+    .btns-container {
+      display: flex;
+      justify-content: center;
+      .btns {
+        button {
+          margin-right: 10px;
+          background-color: $bg-box-primary;
+          @include basic-button;
+          border: 1px solid transparent;
+          &:hover {
+            border: 1px solid $border-primary;
+          }
+          &.active {
+            background-color: $color-color-primary;
+            &:hover {
+              border: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+    .next {
+      @include basic-button;
+      background-color: $bg-box-primary;
+      border: 1px solid transparent;
+      &:hover {
+        @include basic-button;
+        color: $color-color-primary;
+      }
+      color: $color-color-primary;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "./exploreHeader.scss";
+import "./exploreNavbar.scss";
 
 const ExploreNavbar = () => {
   return (
@@ -31,7 +31,7 @@ const ExploreNavbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink end to={"/github-sponsors"}>
+          <NavLink end to={"/sponsors/explore"}>
             GitHub Sponsors
           </NavLink>
         </li>

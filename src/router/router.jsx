@@ -14,6 +14,9 @@ import ExploreLayout from "../components/pages/dropdownMenu/explore/ExploreLayou
 import Topics from "../components/pages/dropdownMenu/explore/exploreNavPages/Topics";
 import Trendings from "../components/pages/dropdownMenu/explore/exploreNavPages/Trendings";
 import Collections from "../components/pages/dropdownMenu/explore/exploreNavPages/Collections";
+import Events from "../components/pages/dropdownMenu/explore/exploreNavPages/Events";
+import GitHubSpoonsor from "../components/pages/dropdownMenu/explore/exploreNavPages/githubSponsor/GitHubSpoonsor";
+import SponsorsContainers from "../components/pages/dropdownMenu/explore/exploreNavPages/githubSponsor/SponsorsContainers";
 
 export const router = createBrowserRouter([
   {
@@ -74,6 +77,20 @@ export const router = createBrowserRouter([
       {
         path: "/collections",
         element: <Collections />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
+      },
+      {
+        path: "/sponsors/explore",
+        element: <GitHubSpoonsor />,
+        children: [
+          {
+            path: "/sponsors/explore/",
+            element: <SponsorsContainers />,
+          },
+        ],
       },
     ],
   },

@@ -1,0 +1,30 @@
+@import "../../../../../assets/styles/styles.scss";
+
+.events {
+  // navbar
+  .navbar {
+    background-color: $bg-box-primary;
+    .explore-navbar {
+      max-width: 1010px;
+      margin: auto;
+      padding: 0px 16px;
+      li:hover a {
+        color: $bg-main;
+      }
+      a.active {
+        color: $color-color-primary;
+      }
+    }
+    background-color: $color-primary;
+    .divider {
+      margin: 0px;
+    }
+  }
+  // intro
+  .browse {
+    background-color: $color-primary;
+    h1 {
+      color: black;
+    }
+  }
+}

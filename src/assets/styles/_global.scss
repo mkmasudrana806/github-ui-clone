@@ -32,11 +32,13 @@ body {
 // padding. largest padding
 .p-1 {
   padding: 16px;
+  border-radius: 5px;
 }
 
 // primary border with primary color
 .border-primary {
   border: 1px solid $border-primary;
+  border-radius: 5px;
 }
 // color text. blue color
 .text-color {
