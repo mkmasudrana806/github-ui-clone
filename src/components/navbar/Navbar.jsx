@@ -12,6 +12,7 @@ import ImageCircle from "../image/ImageCircle";
 import { useState } from "react";
 import MenuDropDown from "../dropdown/MenuDropDown";
 import AccountDropdownMenu from "../dropdown/AccountDropdownMenu";
+import Overlay from "../utilityComponents/Overlay";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -53,10 +54,16 @@ const Navbar = () => {
     <nav className="appHeader">
       {/* show menu dropdown */}
       {isOpenMenu && (
+        <Overlay handleClose={handleClose}>
+          <MenuDropDown handleClose={handleClose} />
+        </Overlay>
+      )}
+      {/*use below way. above i have made a component for overlay making  */}
+      {/* {isOpenMenu && (
         <div onClick={handleClose} className="overlay">
           <MenuDropDown handleClose={handleClose} />
         </div>
-      )}
+      )} */}
       {/* show account profile dropdown */}
       {isOpenProfile && (
         <div onClick={handleCloseProfile} className="overlay">

@@ -21,13 +21,40 @@ import { LuSettings } from "react-icons/lu";
 import { FiBookOpen } from "react-icons/fi";
 import { LuUsers2 } from "react-icons/lu";
 import Divider from "../utilityComponents/Divider";
+import { useState } from "react";
+import Overlay from "../utilityComponents/Overlay";
+import SetStatus from "../pages/dropdownProfile/setStatus/SetStatusPopUp";
 
 const AccountDropdownMenu = ({ handleCloseProfile }) => {
+  const [isOpenSetStatus, setOpenStatus] = useState(false);
+
+  // ************ menu bar toggle ***********
+  const toggleSetStatus = () => {
+    setOpenStatus(!isOpenSetStatus);
+    // Toggle body scrolling
+    if (!isOpenSetStatus) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = ""; // Enable scrolling
+    }
+  };
+  // handle close menu bar
+  const handleClose = () => {
+    setOpenStatus(false);
+    document.body.style.overflow = ""; // Enable scrolling
+  };
+
   return (
     <div
       onClick={(e) => e.stopPropagation()}
       className="account-drop-down custom-scrollbar"
     >
+      {/* set status popup  */}
+      {isOpenSetStatus && (
+        <Overlay handleClose={handleClose}>
+          <SetStatus handleClose={handleClose} />
+        </Overlay>
+      )}
       {/* account list close button  */}
       <div className="account-header flex-between">
         <div className="flex-left">
@@ -44,7 +71,7 @@ const AccountDropdownMenu = ({ handleCloseProfile }) => {
       {/* account list content  */}
       <div className="account-content">
         <ul>
-          <li>
+          <li onClick={toggleSetStatus}>
             <IconWithText
               icon={<MdOutlineEmojiEmotions />}
               text={"Set status"}

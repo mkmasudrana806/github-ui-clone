@@ -1,0 +1,58 @@
+@import "../../../../assets/styles/styles.scss";
+
+.setStatuPopUp {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  .popUpBody {
+    width: 480px;
+    padding: 16px;
+    background-color: $bg-box-primary;
+    .cancel-btn {
+      border: none;
+      color: $color-muted;
+      &:hover {
+        color: $color-primary;
+        background-color: $bg-box-secondary;
+      }
+    }
+    .suggestion-icon {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      row-gap: 5px;
+      button {
+        &:hover {
+          background-color: $bg-box-secondary;
+        }
+        padding: 8px 10px;
+        border-radius: 5px;
+      }
+    }
+    .busy-checkbox {
+      display: flex;
+      column-gap: 10px;
+    }
+    .clear-status {
+      background-color: $bg-box-primary;
+      padding: 5px 10px;
+      width: 100%;
+      color: $color-primary;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .btns {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 10px;
+      button:nth-child(1) {
+        background-color: green;
+        width: 50%;
+        border: none;
+      }
+      button:nth-child(2) {
+        width: 50%;
+      }
+    }
+  }
+}

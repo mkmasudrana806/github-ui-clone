@@ -18,7 +18,7 @@ import Events from "../components/pages/dropdownMenu/explore/exploreNavPages/Eve
 import GitHubSpoonsor from "../components/pages/dropdownMenu/explore/exploreNavPages/githubSponsor/GitHubSpoonsor";
 import SponsorsContainers from "../components/pages/dropdownMenu/explore/exploreNavPages/githubSponsor/SponsorsContainers";
 import MarketPlace from "../components/pages/dropdownMenu/marketplaces/MarketPlace";
-
+import SetStatusPopUp from "../components/pages/dropdownProfile/setStatus/SetStatusPopUp";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -96,6 +96,10 @@ export const router = createBrowserRouter([
       {
         path: "/marketplace",
         element: <MarketPlace />,
+      },
+      {
+        path: "/popup",
+        element: <SetStatusPopUp />,
       },
     ],
   },
