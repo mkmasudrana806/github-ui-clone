@@ -1,0 +1,25 @@
+@import "../../../assets/styles/variables";
+
+.login {
+  .login-form {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+    .input-field {
+      background-color: $bg-box-secondary;
+    }
+    input {
+      background-color: $bg-box-primary;
+      border-radius: 5px;
+    }
+    .btn-login {
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
