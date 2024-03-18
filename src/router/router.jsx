@@ -17,6 +17,7 @@ import Collections from "../components/pages/dropdownMenu/explore/exploreNavPage
 import Events from "../components/pages/dropdownMenu/explore/exploreNavPages/Events";
 import GitHubSpoonsor from "../components/pages/dropdownMenu/explore/exploreNavPages/githubSponsor/GitHubSpoonsor";
 import SponsorsContainers from "../components/pages/dropdownMenu/explore/exploreNavPages/githubSponsor/SponsorsContainers";
+import MarketPlace from "../components/pages/dropdownMenu/marketplaces/MarketPlace";
 
 export const router = createBrowserRouter([
   {
@@ -91,6 +92,10 @@ export const router = createBrowserRouter([
             element: <SponsorsContainers />,
           },
         ],
+      },
+      {
+        path: "/marketplace",
+        element: <MarketPlace />,
       },
     ],
   },

@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 
 * {
   margin: 0;
@@ -19,6 +20,11 @@ body {
   scrollbar-color: $bg-scrollbar-track $bg-scrollbar-thumb;
 }
 
+// primary button
+.btn-primary {
+  @include basic-button;
+  background-color: $bg-box-secondary;
+}
 // cursor pointer
 .pointer {
   cursor: pointer;

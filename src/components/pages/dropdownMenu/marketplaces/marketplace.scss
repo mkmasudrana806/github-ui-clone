@@ -1,0 +1,29 @@
+@import "../../../../assets/styles/styles.scss";
+
+.marketplace {
+  .hero-section {
+    background-color: $bg-box-primary;
+    height: 300px;
+    .hero-content {
+      width: 1010px;
+      margin: 0 auto;
+      height: 100%;
+      .hero {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        button {
+          margin-right: 10px;
+          font-size: 14px;
+        }
+        .sales {
+          border: none;
+          background-color: $bg-box-primary;
+          &:hover {
+            background-color: $bg-box-secondary;
+          }
+        }
+      }
+    }
+  }
+}
