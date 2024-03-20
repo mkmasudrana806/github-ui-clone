@@ -6,13 +6,12 @@ import TopicIntroCart from "../TopicIntroCart";
 import { sponsorsTntro } from "../data/data";
 
 const GitHubSpoonsor = () => {
-  // rer all nav items pages conditionally
+  // render all nav items pages conditionally
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const params = queryParams.get("ecosystem");
   let content = null;
 
-  console.log("rendered content");
   if (params === "cargo") {
     content = (
       <div className="left">

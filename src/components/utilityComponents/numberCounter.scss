@@ -1,13 +1,14 @@
 @use "../../assets/styles/variables" as var;
 
 .value {
+  height: 20px;
   min-width: 20px;
-  min-height: 20px;
-  border-radius: 100%;
+  border-radius: 50px;
+  padding: 0px 6px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #5a5e63;
+  background-color: #2e2f30;
   margin-left: 8px;
   margin-right: 8px;
 }

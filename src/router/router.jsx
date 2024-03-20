@@ -20,6 +20,8 @@ import SponsorsContainers from "../components/pages/dropdownMenu/explore/explore
 import MarketPlace from "../components/pages/dropdownMenu/marketplaces/MarketPlace";
 import SetStatusPopUp from "../components/pages/dropdownProfile/setStatus/SetStatusPopUp";
 import Login from "../components/auth/login/Login";
+import Profile from "../components/pages/dropdownProfile/yourProfile/Profile";
+import LocalNavbar from "../components/navbar/LocalNavbar";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -98,10 +100,10 @@ export const router = createBrowserRouter([
         path: "/marketplace",
         element: <MarketPlace />,
       },
+      {
+        path: "/mkmasudrana806",
+        element: <Profile />,
+      },
     ],
-  },
-  {
-    path: "/login",
-    element: <Login />,
   },
 ]);

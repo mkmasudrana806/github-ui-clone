@@ -24,6 +24,7 @@ import Divider from "../utilityComponents/Divider";
 import { useState } from "react";
 import Overlay from "../utilityComponents/Overlay";
 import SetStatus from "../pages/dropdownProfile/setStatus/SetStatusPopUp";
+import { Link } from "react-router-dom";
 
 const AccountDropdownMenu = ({ handleCloseProfile }) => {
   const [isOpenSetStatus, setOpenStatus] = useState(false);
@@ -69,7 +70,7 @@ const AccountDropdownMenu = ({ handleCloseProfile }) => {
         </span>
       </div>
       {/* account list content  */}
-      <div className="account-content">
+      <div className="account-list">
         <ul>
           <li onClick={toggleSetStatus}>
             <IconWithText
@@ -78,61 +79,68 @@ const AccountDropdownMenu = ({ handleCloseProfile }) => {
             />
           </li>
           <Divider />
-          <li>
-            <IconWithText icon={<LuUser2 />} text={"Your profile"} />
-          </li>
-          <li>
-            <IconWithText icon={<LuUserPlus2 />} text={"Add account"} />
-          </li>
+
+          <Link to={"/mkmasudrana806"}>
+            <li onClick={handleCloseProfile}>
+              <IconWithText icon={<LuUser2 />} text={"Your profile"} />
+            </li>
+          </Link>
+
+          <Link to={"/login"}>
+            <li onClick={handleCloseProfile}>
+              <IconWithText icon={<LuUserPlus2 />} text={"Add account"} />
+            </li>
+          </Link>
           <Divider />
-          <li>
+
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<GoRepo />} text={"Your repositories"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<AiOutlineProject />} text={"Your projects"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<RiCopilotLine />} text={"Your Copilot"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText
               icon={<GoOrganization />}
               text={"Your organizations"}
             />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<TbNetwork />} text={"Your enterprises"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<TiStarOutline />} text={"Your stars"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<TiHeartOutline />} text={"Your sponsors"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<RiCodeBoxLine />} text={"Your gists"} />
           </li>
           <Divider />
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<FiUpload />} text={"Updrade"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<TiStarOutline />} text={"Try enterprise"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText
               icon={<AiOutlineExperiment />}
               text={"Feature preview"}
             />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<LuSettings />} text={"Settings"} />
           </li>
           <Divider />
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<FiBookOpen />} text={"GitHub Docs"} />
           </li>
-          <li>
+          <li onClick={handleCloseProfile}>
             <IconWithText icon={<LuUsers2 />} text={"GitHub Support"} />
           </li>
           <Divider />

@@ -1,0 +1,80 @@
+@import "../../../../assets/styles/styles.scss";
+
+.profile-page {
+  padding: 16px;
+  .main-body {
+    max-width: 1216px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    margin-top: 20px;
+
+    // profile sidebar
+    .sidebar {
+      flex: 1; /* Initial width of 294px */
+      max-width: 294px;
+      min-width: 254px; /* Shrink until this point */
+      // profile photo
+      .profile {
+        .photo {
+          position: relative;
+          span {
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            background-color: $bg-box-secondary;
+            border-radius: 100%;
+          }
+          img {
+            width: 100%;
+            border-radius: 100%;
+          }
+        }
+        .button {
+          width: 100%;
+        }
+      }
+
+      // profile edit form
+      .profile-edit-form {
+        textarea {
+          width: 100%;
+          background-color: $bg-box-primary;
+          border-radius: 5px;
+          border: 1px solid $border-primary;
+          resize: vertical;
+        }
+        select {
+          width: 100%;
+          padding: 5px 10px;
+          background-color: $bg-box-primary;
+        }
+      }
+    }
+    // outlet content
+    .main {
+      flex: 1; /* Take up remaining available space */
+      min-width: 435px; /* Shrink until this point */
+      .repositories {
+        display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        .repo-cart {
+          .icons {
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+          }
+          .public-status {
+            width: max-content;
+            border: 1px solid $border-primary;
+            border-radius: 50px;
+            padding: 1px 10px;
+          }
+        }
+      }
+    }
+  }
+}

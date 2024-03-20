@@ -9,14 +9,29 @@ import profileImg from "../../assets/user.jpg";
 import "./navbar.scss";
 import SearchFieldIcon from "../forms/SearchFieldIcon";
 import ImageCircle from "../image/ImageCircle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuDropDown from "../dropdown/MenuDropDown";
 import AccountDropdownMenu from "../dropdown/AccountDropdownMenu";
 import Overlay from "../utilityComponents/Overlay";
+import { useLocation } from "react-router-dom";
+import LocalNavbar from "./LocalNavbar";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isOpenProfile, setIsOpenProfile] = useState(false);
+  const [isOpenLocalbar, setIsOpenLocalbar] = useState(false);
+
+  // if location='/mkmasudrana806' then show..
+  // overview, repositories, projects, packages and stars tabs
+  // userName comes from authorized logged in user profile
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/mkmasudrana806") {
+      setIsOpenLocalbar(true);
+    } else {
+      setIsOpenLocalbar(false);
+    }
+  }, [location]);
 
   // ************ menu bar toggle ***********
   const toggleMenu = () => {
@@ -58,18 +73,14 @@ const Navbar = () => {
           <MenuDropDown handleClose={handleClose} />
         </Overlay>
       )}
-      {/*use below way. above i have made a component for overlay making  */}
-      {/* {isOpenMenu && (
-        <div onClick={handleClose} className="overlay">
-          <MenuDropDown handleClose={handleClose} />
-        </div>
-      )} */}
+
       {/* show account profile dropdown */}
       {isOpenProfile && (
-        <div onClick={handleCloseProfile} className="overlay">
+        <Overlay handleCloseProfile={handleCloseProfile}>
           <AccountDropdownMenu handleCloseProfile={handleCloseProfile} />
-        </div>
+        </Overlay>
       )}
+
       <div className="appHeader-globalBar">
         {/* left side  */}
         <div className="appHeader-globalbar-start">
@@ -104,10 +115,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* localbar show based on user  */}
-      {/* <div style={{ display: "none" }} className="appHeader-localbar">
-        localbar
-      </div> */}
+      {/* localbar show based on current location:'/mkmasudrana806' */}
+      {isOpenLocalbar && <LocalNavbar />}
     </nav>
   );
 };

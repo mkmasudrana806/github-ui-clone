@@ -1,0 +1,63 @@
+@import "../../assets/styles/variables";
+// left side navbar
+.localbar {
+  padding: 0px 16px;
+  position: relative;
+  bottom: 8px;
+  ul {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    li {
+      list-style: none;
+      padding: 7px 0px;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 0px 10px;
+      border-radius: 5px;
+      color: $color-muted;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      position: relative;
+      &.active {
+        &:before {
+          content: "";
+          height: 2px;
+          background-color: rgb(240, 107, 59);
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%) translateY(-50%);
+          width: 100%;
+          top: 40px;
+        }
+      }
+      &:has(a.active) {
+        &:before {
+          content: "";
+          height: 2px;
+          background-color: rgb(240, 107, 59);
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%) translateY(-50%);
+          width: 100%;
+          top: 40px;
+        }
+      }
+      &:hover {
+        background-color: $bg-box-secondary;
+        cursor: pointer;
+      }
+      svg {
+        font-size: 16px;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        color: $color-primary;
+      }
+    }
+  }
+}
