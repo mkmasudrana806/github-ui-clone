@@ -13,6 +13,7 @@ import { useLocation } from "react-router-dom";
 import Repositories from "./repositories/Repositories";
 import ProfileOverview from "./overview/ProfileOverview";
 import Projects from "./projects/Projects";
+import Packages from "./packages/Packages";
 
 const Profile = () => {
   const [editProfile, setEditProfile] = useState(false);
@@ -35,7 +36,7 @@ const Profile = () => {
   } else if (params === "projects") {
     content = <Projects />;
   } else if (params === "packages") {
-    content = <Repositories />;
+    content = <Packages />;
   } else if (params === "stars") {
     content = <Repositories />;
   }

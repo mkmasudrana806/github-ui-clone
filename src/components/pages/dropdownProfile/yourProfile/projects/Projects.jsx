@@ -1,5 +1,4 @@
 import "./projects.scss";
-
 import { GoProjectSymlink } from "react-icons/go";
 
 const Projects = () => {
