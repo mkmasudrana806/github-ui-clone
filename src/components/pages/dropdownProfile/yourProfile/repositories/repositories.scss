@@ -1,0 +1,42 @@
+@import "../../../../../assets/styles/styles.scss";
+
+.repositories-containers {
+  // filters header
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+  }
+
+  // repositories
+  .repositories {
+    .repo {
+      margin-top: 30px;
+      .public-status {
+        width: max-content;
+        border: 1px solid $border-primary;
+        border-radius: 50px;
+        padding: 1px 10px;
+        color: $color-muted;
+        font-size: 12px;
+      }
+      .repo-footer {
+        display: flex;
+        column-gap: 32px;
+      }
+    }
+  }
+
+  // pagination
+
+  .pagination {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 32px;
+    .next {
+      font-size: 12px;
+      color: $color-color-primary;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import "./localNavbar.scss";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FiBookOpen } from "react-icons/fi";
 import { GoRepo } from "react-icons/go";
 import { GoProjectSymlink } from "react-icons/go";

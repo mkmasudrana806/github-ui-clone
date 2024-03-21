@@ -1,9 +1,6 @@
 import "./profile.scss";
 import userLogo from "../../../../assets/user.jpg";
 import { BsEmojiFrown } from "react-icons/bs";
-import IconWithText from "../../../iconsButtons/IconWithText";
-import { TiStarOutline } from "react-icons/ti";
-import { FaCircle } from "react-icons/fa";
 import Button from "../../../buttons/Button";
 import { LuUsers2 } from "react-icons/lu";
 import InputField from "../../../forms/InputField";
@@ -12,15 +9,35 @@ import { GrLocation } from "react-icons/gr";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { IoIosLink } from "react-icons/io";
 import { useState } from "react";
-import ContributionCalender from "./contribution calender/ContributionCalender";
+import ProfileOverview from "./ProfileOverview";
+import { useLocation } from "react-router-dom";
+import Repositories from "./repositories/Repositories";
 
 const Profile = () => {
   const [editProfile, setEditProfile] = useState(false);
-
   // toggle edit profile button and cancel button
   const handleEditProfile = () => {
     setEditProfile(!editProfile);
   };
+
+  // catch query parameters
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const params = queryParams.get("tab");
+
+  // render main content based on tab
+  let content = null;
+  if (params === null) {
+    content = <ProfileOverview />;
+  } else if (params === "repositories") {
+    content = <Repositories />;
+  } else if (params === "projects") {
+    content = <Repositories />;
+  } else if (params === "packages") {
+    content = <Repositories />;
+  } else if (params === "stars") {
+    content = <Repositories />;
+  }
 
   return (
     <div className="profile-page">
@@ -57,24 +74,7 @@ const Profile = () => {
         </div>
 
         {/* main  */}
-        <div className="main">
-          <div className="flex-between">
-            <p className="text-medium">Popular repositories</p>
-            <p className="text-small">Customize your pins</p>
-          </div>
-          {/* repositories lists */}
-          <div className="repositories mt-1">
-            <RepoCart />
-            <RepoCart />
-            <RepoCart />
-            <RepoCart />
-            <RepoCart />
-            <RepoCart />
-          </div>
-
-          {/* <ContributionCalender /> */}
-          <ContributionCalender />
-        </div>
+        <div className="main">{content}</div>
       </div>
     </div>
   );
@@ -153,29 +153,6 @@ const ProfileEditForm = ({ handleEditProfile }) => {
         <div onClick={handleEditProfile}>
           <Button text="Cancel" />
         </div>
-      </div>
-    </div>
-  );
-};
-
-// repo cart for the repositories list
-const RepoCart = () => {
-  return (
-    <div className="repo-cart border-primary p-1">
-      <div className="flex-between">
-        <p className="text-color pointer">
-          post-delete-comment-textchange-onclick
-        </p>
-        <span className="public-status  text-small">public</span>
-      </div>
-      <p className="text-small mt-3">
-        in this repository i have completed some samll task like how to post,
-        comment, delete some line, delete button when use press delete button
-        course will delete
-      </p>
-      <div className="icons mt-3">
-        <IconWithText icon={<FaCircle />} color="orange" text={"HTML"} />
-        <IconWithText icon={<TiStarOutline />} color="gray" text={"1"} />
       </div>
     </div>
   );
