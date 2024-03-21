@@ -1,0 +1,49 @@
+@import "../../../../../assets/styles/styles.scss";
+
+.projects {
+  // welcome cart
+  .welcome-cart {
+    @include borderBox;
+    background: url("../../../../../assets/project-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    button {
+      @include basic-button;
+      background-color: $bg-box-secondary;
+      border: 1px solid $border-primary;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    p {
+      width: 465px;
+      line-height: 23px;
+    }
+  }
+  // create new github project cart
+  .create-new-project {
+    @include borderBox(yes, $bg-main);
+    margin: 0 auto;
+    > div {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+      svg {
+        font-size: 20px;
+        color: $color-muted;
+      }
+      p {
+        text-align: center;
+        color: $color-muted;
+        span {
+          color: $color-color-primary;
+        }
+      }
+      button {
+        @include basic-button;
+        background-color: #238636;
+      }
+    }
+  }
+}

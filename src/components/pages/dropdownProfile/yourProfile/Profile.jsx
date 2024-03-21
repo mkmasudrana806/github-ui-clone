@@ -9,9 +9,10 @@ import { GrLocation } from "react-icons/gr";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { IoIosLink } from "react-icons/io";
 import { useState } from "react";
-import ProfileOverview from "./ProfileOverview";
 import { useLocation } from "react-router-dom";
 import Repositories from "./repositories/Repositories";
+import ProfileOverview from "./overview/ProfileOverview";
+import Projects from "./projects/Projects";
 
 const Profile = () => {
   const [editProfile, setEditProfile] = useState(false);
@@ -32,7 +33,7 @@ const Profile = () => {
   } else if (params === "repositories") {
     content = <Repositories />;
   } else if (params === "projects") {
-    content = <Repositories />;
+    content = <Projects />;
   } else if (params === "packages") {
     content = <Repositories />;
   } else if (params === "stars") {

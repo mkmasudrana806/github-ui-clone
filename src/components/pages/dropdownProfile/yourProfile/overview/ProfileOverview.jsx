@@ -1,6 +1,6 @@
 import "./profileOverview.scss";
-import ContributionCalender from "./contribution calender/ContributionCalender";
-import IconWithText from "../../../iconsButtons/IconWithText";
+import ContributionCalender from "../contribution calender/ContributionCalender";
+import IconWithText from "../../../../iconsButtons/IconWithText";
 import { TiStarOutline } from "react-icons/ti";
 import { FaCircle } from "react-icons/fa";
 
