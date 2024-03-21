@@ -1,0 +1,19 @@
+@import "../../../../../assets/styles/variables";
+
+.contributions {
+  margin-top: 30px;
+  .contribution-years {
+    width: 100%;
+    padding: 7px 10px;
+    background-color: $bg-box-primary;
+    color: inherit;
+    border: 1px solid $border-primary;
+    border-radius: 5px;
+  }
+  .graph {
+    padding: 8px;
+    border: 1px solid $border-primary;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+}

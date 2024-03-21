@@ -1,4 +1,3 @@
-import ImageCircle from "../../../image/ImageCircle";
 import "./profile.scss";
 import userLogo from "../../../../assets/user.jpg";
 import { BsEmojiFrown } from "react-icons/bs";
@@ -13,6 +12,7 @@ import { GrLocation } from "react-icons/gr";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { IoIosLink } from "react-icons/io";
 import { useState } from "react";
+import ContributionCalender from "./contribution calender/ContributionCalender";
 
 const Profile = () => {
   const [editProfile, setEditProfile] = useState(false);
@@ -62,6 +62,7 @@ const Profile = () => {
             <p className="text-medium">Popular repositories</p>
             <p className="text-small">Customize your pins</p>
           </div>
+          {/* repositories lists */}
           <div className="repositories mt-1">
             <RepoCart />
             <RepoCart />
@@ -70,6 +71,9 @@ const Profile = () => {
             <RepoCart />
             <RepoCart />
           </div>
+
+          {/* <ContributionCalender /> */}
+          <ContributionCalender />
         </div>
       </div>
     </div>
@@ -88,7 +92,13 @@ const ProfileEditForm = ({ handleEditProfile }) => {
       </div>
       <div className="mt-2">
         <p className="text-medium mb-3">Bio</p>
-        <textarea name="" id="" cols="30" rows="5"></textarea>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Add a bio"
+        ></textarea>
       </div>
       <p className="text-small">
         You can @mention other users and organizations to link to them.
