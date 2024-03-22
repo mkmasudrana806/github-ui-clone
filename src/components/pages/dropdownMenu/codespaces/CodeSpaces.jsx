@@ -4,12 +4,9 @@ import { GoCodespaces } from "react-icons/go";
 import { GoRepoTemplate } from "react-icons/go";
 import NumberCounter from "../../../utilityComponents/NumberCounter";
 import {   NavLink, Outlet } from "react-router-dom";
-import { useState } from "react";
 import Divider from "../../../utilityComponents/Divider";
 
 const CodeSpaces = () => {
-  const [activeTabIndex, setActiveTabIndex] = useState(0);
-
   return (
     <div className="codespaces-page">
       <div className="codespaces-body ">

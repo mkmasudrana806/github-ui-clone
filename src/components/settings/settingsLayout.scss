@@ -1,0 +1,60 @@
+@import "../../assets/styles/styles.scss";
+
+.settings {
+  padding: 32px 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+  .settingsLayout {
+    display: flex;
+    column-gap: 32px;
+
+    // sidebar
+    .sidebar {
+      width: 296px;
+      ul {
+        li {
+          list-style: none;
+          a {
+            button {
+              @include basic-button;
+              border: none;
+              .text {
+                color: $color-primary;
+              }
+              .icon {
+                font-size: 16px;
+              }
+            }
+          }
+          a.active {
+            background-color: $bg-box-secondary;
+            border-radius: 5px;
+            position: relative;
+            &::before {
+              position: absolute;
+              top: 4px;
+              width: 4px;
+              height: 24px;
+              margin-left: -8px;
+              content: "";
+              background: $color-color-primary;
+              border-radius: 6px;
+            }
+          }
+          &:hover {
+            background-color: $bg-box-secondary;
+            border-radius: 5px;
+          }
+        }
+        .ms {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    // main content
+    .mainLayout {
+      flex: 1;
+    }
+  }
+}
