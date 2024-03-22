@@ -1,4 +1,4 @@
-import ImageCircle from "../../../image/ImageCircle";
+
 import "./createRepoActivity.scss";
 import userLogo from "../../../../assets/user.jpg";
 import ButtonImg from "../../../iconsButtons/ButtonImg";
@@ -7,6 +7,7 @@ import { FiStar } from "react-icons/fi";
 import { FaCircle } from "react-icons/fa";
 import ButtonGroup from "../../../iconsButtons/ButtonGroup";
 import IconWithText from "../../../iconsButtons/IconWithText";
+import ImageCircle from "../../../utilityComponents/image/ImageCircle";
 
 const CreateRepoActivity = () => {
   return (

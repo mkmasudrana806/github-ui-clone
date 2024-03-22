@@ -6,8 +6,6 @@ import Issues from "../components/pages/dropdownMenu/issues/Issues";
 import PullRequest from "../components/pages/dropdownMenu/pullRequest/PullRequest";
 import Projects from "../components/pages/dropdownMenu/projects/Projects";
 import CodeSpaces from "../components/pages/dropdownMenu/codespaces/CodeSpaces";
-import Button from "../components/buttons/Button";
-import NumberCounter from "../components/utilityComponents/NumberCounter";
 import CodespaceDetails from "../components/pages/dropdownMenu/codespaces/CodespaceDetails";
 import Templates from "../components/pages/dropdownMenu/codespaces/templates/Templates";
 import ExploreLayout from "../components/pages/dropdownMenu/explore/ExploreLayout";
@@ -18,11 +16,9 @@ import Events from "../components/pages/dropdownMenu/explore/exploreNavPages/Eve
 import GitHubSpoonsor from "../components/pages/dropdownMenu/explore/exploreNavPages/githubSponsor/GitHubSpoonsor";
 import SponsorsContainers from "../components/pages/dropdownMenu/explore/exploreNavPages/githubSponsor/SponsorsContainers";
 import MarketPlace from "../components/pages/dropdownMenu/marketplaces/MarketPlace";
-import SetStatusPopUp from "../components/pages/dropdownProfile/setStatus/SetStatusPopUp";
-import Login from "../components/auth/login/Login";
 import Profile from "../components/pages/dropdownProfile/yourProfile/Profile";
-import LocalNavbar from "../components/navbar/LocalNavbar";
 import Copilot from "../components/pages/dropdownProfile/copilot/Copilot";
+import SettingsLayout from "../components/settings/SettingsLayout";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -108,6 +104,10 @@ export const router = createBrowserRouter([
       {
         path: "/github-copilot/signup",
         element: <Copilot />,
+      },
+      {
+        path: "/settings",
+        element: <SettingsLayout />,
       },
     ],
   },

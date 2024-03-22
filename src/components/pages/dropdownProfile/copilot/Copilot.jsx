@@ -1,8 +1,8 @@
 import "./copilot.scss";
-import Button from "../../../buttons/Button";
 import Divider from "../../../utilityComponents/Divider";
 import copilotLogo from "../../../../assets/copilot.png";
-import ImageCircle from "../../../image/ImageCircle";
+import ImageCircle from "../../../utilityComponents/image/ImageCircle";
+import Button from "../../../utilityComponents/buttons/Button";
 
 const Copilot = () => {
   return (

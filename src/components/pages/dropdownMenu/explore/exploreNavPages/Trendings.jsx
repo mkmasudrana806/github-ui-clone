@@ -11,8 +11,8 @@ import ButtonGroup from "../../../../iconsButtons/ButtonGroup";
 import { GoRepoTemplate } from "react-icons/go";
 import { FaCodeBranch } from "react-icons/fa6";
 import { FaCircle } from "react-icons/fa";
-import ImageCircle from "../../../../image/ImageCircle";
 import userLogo from "../../../../../assets/user.jpg";
+import ImageCircle from "../../../../utilityComponents/image/ImageCircle";
 
 const Trendings = () => {
   const intro = {

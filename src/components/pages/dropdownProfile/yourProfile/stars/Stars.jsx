@@ -1,21 +1,17 @@
-import Button from "../../../../buttons/Button";
 import { RiGitRepositoryLine } from "react-icons/ri";
 import "./stars.scss";
 import rocket from "../../../../../assets/rocket.png";
 import idea from "../../../../../assets/ideas.png";
 import { TiStarOutline } from "react-icons/ti";
-import ButtonIcon from "../../../../iconsButtons/ButtonIcon";
 import IconWithText from "../../../../iconsButtons/IconWithText";
 import { TiHeartOutline } from "react-icons/ti";
 import ButtonGroup from "../../../../iconsButtons/ButtonGroup";
-import { GoRepoTemplate } from "react-icons/go";
 import { FaCodeBranch } from "react-icons/fa6";
 import { FaCircle } from "react-icons/fa";
-import ImageCircle from "../../../../image/ImageCircle";
-import userLogo from "../../../../../assets/user.jpg";
 import InputField from "../../../../forms/InputField";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Divider from "../../../../utilityComponents/Divider";
+import Button from "../../../../utilityComponents/buttons/Button";
 
 const Stars = () => {
   return (

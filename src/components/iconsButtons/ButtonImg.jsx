@@ -1,5 +1,6 @@
-import ImageCircle from "../image/ImageCircle";
+
 import userLogo from "../../assets/user.jpg";
+import ImageCircle from "../utilityComponents/image/ImageCircle";
 import "./buttonStyles.scss";
 
 // format: image + text (this is not a button style)

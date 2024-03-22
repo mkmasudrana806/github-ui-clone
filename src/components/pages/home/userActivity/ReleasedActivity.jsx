@@ -1,4 +1,3 @@
-import ImageCircle from "../../../image/ImageCircle";
 import "./releasedActivity.scss";
 import userLogo from "../../../../assets/user.jpg";
 import rocketIcon from "../../../../assets/rocket.png";
@@ -9,7 +8,7 @@ import { FaCircle } from "react-icons/fa";
 import { MdOutlineEmojiEmotions } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
 import Divider from "../../../utilityComponents/Divider";
- 
+import ImageCircle from "../../../utilityComponents/image/ImageCircle";
 
 const ReleasedActivity = () => {
   return (

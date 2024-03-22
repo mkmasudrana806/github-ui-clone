@@ -1,4 +1,3 @@
-import ImageCircle from "../image/ImageCircle";
 import "./menuDropDown.scss";
 import { RxCross2 } from "react-icons/rx";
 import githubLogo from "../../assets/logo.png";
@@ -15,6 +14,7 @@ import InputField from "../forms/InputField";
 import ButtonImg from "../iconsButtons/ButtonImg";
 import { Link } from "react-router-dom";
 import Divider from "../utilityComponents/Divider";
+import ImageCircle from "../utilityComponents/image/ImageCircle";
 
 const MenuDropDown = ({ handleClose }) => {
   return (

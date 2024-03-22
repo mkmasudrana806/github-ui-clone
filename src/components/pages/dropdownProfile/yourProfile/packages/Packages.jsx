@@ -1,7 +1,7 @@
 import "./packages.scss";
 import logo from "../../../../../assets/lean.png";
-import Button from "../../../../buttons/Button";
-import ImageCircle from "../../../../image/ImageCircle";
+import ImageCircle from "../../../../utilityComponents/image/ImageCircle";
+import Button from "../../../../utilityComponents/buttons/Button";
 
 const Packages = () => {
   return (

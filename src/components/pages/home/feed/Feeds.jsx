@@ -1,9 +1,10 @@
-import ImageCircle from "../../../image/ImageCircle";
+
 import ExploreRepositories from "./ExploreRepositories";
 import LatestChanges from "./LatestChanges";
 import "./feed.scss";
 import { RxCross2 } from "react-icons/rx";
 import githubLogo from "../../../../assets/logo.png";
+import ImageCircle from "../../../utilityComponents/image/ImageCircle";
 
 const Feeds = () => {
   return (

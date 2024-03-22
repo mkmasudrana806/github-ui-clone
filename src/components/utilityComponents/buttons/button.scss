@@ -1,13 +1,13 @@
-@import "../../assets/styles/styles.scss";
+@import "../../../assets/styles/styles.scss";
 .button {
   @include basic-button;
-  background-color: $bg-box-secondary;
+  background-color: $bg-btn-primary;
   width: max-content;
   padding: 5px 12px;
   border: 1px solid $border-primary;
   &:hover {
-    border: 1px solid #8b949e;
-    background-color: #30363d;
+    // border: 1px solid #8b949e;
+    background-color: $bg-btn-hover;
   }
   display: flex;
   align-items: center;

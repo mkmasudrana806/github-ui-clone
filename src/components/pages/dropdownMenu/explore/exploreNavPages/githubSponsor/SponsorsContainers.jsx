@@ -5,8 +5,8 @@ import Divider from "../../../../../utilityComponents/Divider";
 import { FaAngleLeft } from "react-icons/fa6";
 import IconWithText from "../../../../../iconsButtons/IconWithText";
 import { FaAngleRight } from "react-icons/fa";
-import ImageCircle from "../../../../../image/ImageCircle";
 import ButtonIcon from "../../../../../iconsButtons/ButtonIcon";
+import ImageCircle from "../../../../../utilityComponents/image/ImageCircle";
 
 const SponsorsContainers = () => {
   return (

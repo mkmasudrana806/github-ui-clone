@@ -1,6 +1,7 @@
-import ImageCircle from "../image/ImageCircle";
+
 import "./footer.scss";
 import githubLogo from "../../assets/logo.png";
+import ImageCircle from "../utilityComponents/image/ImageCircle";
 
 const Footer = () => {
   return (

@@ -1,6 +1,5 @@
 import "./exploreLayout.scss";
 import userLogo from "../../../../assets/user.jpg";
-import ImageCircle from "../../../image/ImageCircle";
 import ExploreNavbar from "./ExploreNavbar";
 import { RiYoutubeLine } from "react-icons/ri";
 import ExploreRepoCart from "./repoCart/ExploreRepoCart";
@@ -10,6 +9,7 @@ import { GoRepoTemplate } from "react-icons/go";
 import { FiStar } from "react-icons/fi";
 import { FaAngleRight } from "react-icons/fa6";
 import Divider from "../../../utilityComponents/Divider";
+import ImageCircle from "../../../utilityComponents/image/ImageCircle";
 
 const ExploreLayout = () => {
   return (

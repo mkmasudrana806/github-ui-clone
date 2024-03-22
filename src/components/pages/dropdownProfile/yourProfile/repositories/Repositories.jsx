@@ -1,5 +1,4 @@
 import "./repositories.scss";
-import Button from "../../../../buttons/Button";
 import InputField from "../../../../forms/InputField";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { RiGitRepositoryLine } from "react-icons/ri";
@@ -9,6 +8,7 @@ import IconWithText from "../../../../iconsButtons/IconWithText";
 import { FaCircle } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa";
+import Button from "../../../../utilityComponents/buttons/Button";
 
 const Repositories = () => {
   return (

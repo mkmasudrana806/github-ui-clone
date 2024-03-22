@@ -5,9 +5,9 @@ import { FiDatabase } from "react-icons/fi";
 import { SlOptions } from "react-icons/sl";
 import TemplateCart from "./templates/TemplateCart";
 import { RxCross2 } from "react-icons/rx";
-import Button from "../../../buttons/Button";
 import "./codespaceDetails.scss";
 import { useLocation } from "react-router-dom";
+import Button from "../../../utilityComponents/buttons/Button";
 
 const CodespaceDetails = () => {
   const location = useLocation();

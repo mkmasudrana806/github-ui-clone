@@ -1,6 +1,6 @@
 import githubLogo from "../../../../../assets/logo.png";
-import Button from "../../../../buttons/Button";
-import ImageCircle from "../../../../image/ImageCircle";
+import Button from "../../../../utilityComponents/buttons/Button";
+import ImageCircle from "../../../../utilityComponents/image/ImageCircle";
 import "./templates.scss";
 
 const TemplateCart = () => {

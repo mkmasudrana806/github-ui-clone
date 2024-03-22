@@ -8,13 +8,13 @@ import profileImg from "../../assets/user.jpg";
 
 import "./navbar.scss";
 import SearchFieldIcon from "../forms/SearchFieldIcon";
-import ImageCircle from "../image/ImageCircle";
 import { useEffect, useState } from "react";
 import MenuDropDown from "../dropdown/MenuDropDown";
 import AccountDropdownMenu from "../dropdown/AccountDropdownMenu";
 import Overlay from "../utilityComponents/Overlay";
 import { useLocation } from "react-router-dom";
 import LocalNavbar from "./LocalNavbar";
+import ImageCircle from "../utilityComponents/image/ImageCircle";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);

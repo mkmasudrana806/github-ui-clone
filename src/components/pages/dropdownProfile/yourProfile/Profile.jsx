@@ -1,7 +1,6 @@
 import "./profile.scss";
 import userLogo from "../../../../assets/user.jpg";
 import { BsEmojiFrown } from "react-icons/bs";
-import Button from "../../../buttons/Button";
 import { LuUsers2 } from "react-icons/lu";
 import InputField from "../../../forms/InputField";
 import { BsBuilding } from "react-icons/bs";
@@ -15,6 +14,7 @@ import ProfileOverview from "./overview/ProfileOverview";
 import Projects from "./projects/Projects";
 import Packages from "./packages/Packages";
 import Stars from "./stars/Stars";
+import Button from "../../../utilityComponents/buttons/Button";
 
 const Profile = () => {
   const [editProfile, setEditProfile] = useState(false);

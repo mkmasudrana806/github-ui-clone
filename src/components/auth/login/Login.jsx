@@ -1,9 +1,9 @@
 import "./login.scss";
-import ImageCircle from "../../image/ImageCircle";
 import githubLogo from "../../../assets/logo.png";
 import InputField from "../../forms/InputField";
-import Button from "../../buttons/Button";
 import Footer from "../../footer/Footer";
+import ImageCircle from "../../utilityComponents/image/ImageCircle";
+import Button from "../../utilityComponents/buttons/Button";
 
 const Login = () => {
   return (

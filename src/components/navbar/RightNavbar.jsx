@@ -1,9 +1,8 @@
-import ImageCircle from "../image/ImageCircle";
+ 
 import Feeds from "../pages/home/feed/Feeds";
 import Activities from "../pages/home/userActivity/Activities";
 import "./rightNavbar.scss";
 import { IoFilterSharp } from "react-icons/io5";
-import githubLogo from "../../assets/logo.png";
 import Footer from "../footer/Footer";
 
 const RightNavbar = () => {

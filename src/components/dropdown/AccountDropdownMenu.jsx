@@ -1,6 +1,4 @@
 import "./accountDropdownMenu.scss";
-
-import ImageCircle from "../image/ImageCircle";
 import { RxCross2 } from "react-icons/rx";
 import userLogo from "../../assets/user.jpg";
 import IconWithText from "../iconsButtons/IconWithText";
@@ -25,6 +23,7 @@ import { useState } from "react";
 import Overlay from "../utilityComponents/Overlay";
 import SetStatus from "../pages/dropdownProfile/setStatus/SetStatusPopUp";
 import { Link } from "react-router-dom";
+import ImageCircle from "../utilityComponents/image/ImageCircle";
 
 const AccountDropdownMenu = ({ handleCloseProfile }) => {
   const [isOpenSetStatus, setOpenStatus] = useState(false);
@@ -111,12 +110,14 @@ const AccountDropdownMenu = ({ handleCloseProfile }) => {
               <IconWithText icon={<RiCopilotLine />} text={"Your Copilot"} />
             </li>
           </Link>
-          <li onClick={handleCloseProfile}>
-            <IconWithText
-              icon={<GoOrganization />}
-              text={"Your organizations"}
-            />
-          </li>
+          <Link to={"/settings/organizations"}>
+            <li onClick={handleCloseProfile}>
+              <IconWithText
+                icon={<GoOrganization />}
+                text={"Your organizations"}
+              />
+            </li>
+          </Link>
           <li onClick={handleCloseProfile}>
             <IconWithText icon={<TbNetwork />} text={"Your enterprises"} />
           </li>

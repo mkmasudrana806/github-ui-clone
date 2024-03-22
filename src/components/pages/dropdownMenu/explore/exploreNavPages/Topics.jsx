@@ -2,12 +2,12 @@
 import ExploreNavbar from "../ExploreNavbar";
 import "./topics.scss";
 import { TiStarOutline } from "react-icons/ti";
-import Tag from "../../../../tags/Tag";
 import Divider from "../../../../utilityComponents/Divider";
 import ButtonIcon from "../../../../iconsButtons/ButtonIcon";
 import TopicIntroCart from "./TopicIntroCart";
 // data import from data folder
 import { featuredTopics, topicsTntro, topics } from "./data/data";
+import Tag from "../../../../utilityComponents/tags/Tag";
 
 const Topics = () => {
   return (
