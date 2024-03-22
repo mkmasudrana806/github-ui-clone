@@ -29,7 +29,7 @@ import { Link } from "react-router-dom";
 const AccountDropdownMenu = ({ handleCloseProfile }) => {
   const [isOpenSetStatus, setOpenStatus] = useState(false);
 
-  // ************ menu bar toggle ***********
+  // ************ set status bar toggle ***********
   const toggleSetStatus = () => {
     setOpenStatus(!isOpenSetStatus);
     // Toggle body scrolling
@@ -39,8 +39,8 @@ const AccountDropdownMenu = ({ handleCloseProfile }) => {
       document.body.style.overflow = ""; // Enable scrolling
     }
   };
-  // handle close menu bar
-  const handleClose = () => {
+  // handle close set status popup
+  const handleCloseSetStatus = () => {
     setOpenStatus(false);
     document.body.style.overflow = ""; // Enable scrolling
   };
@@ -52,8 +52,8 @@ const AccountDropdownMenu = ({ handleCloseProfile }) => {
     >
       {/* set status popup  */}
       {isOpenSetStatus && (
-        <Overlay handleClose={handleClose}>
-          <SetStatus handleClose={handleClose} />
+        <Overlay handleClose={handleCloseSetStatus}>
+          <SetStatus handleClose={handleCloseSetStatus} />
         </Overlay>
       )}
       {/* account list close button  */}

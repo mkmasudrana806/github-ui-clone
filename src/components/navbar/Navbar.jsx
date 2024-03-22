@@ -76,7 +76,7 @@ const Navbar = () => {
 
       {/* show account profile dropdown */}
       {isOpenProfile && (
-        <Overlay handleCloseProfile={handleCloseProfile}>
+        <Overlay handleClose={handleCloseProfile}>
           <AccountDropdownMenu handleCloseProfile={handleCloseProfile} />
         </Overlay>
       )}

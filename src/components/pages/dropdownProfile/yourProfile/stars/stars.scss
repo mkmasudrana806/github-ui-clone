@@ -24,6 +24,12 @@
   .carts {
     .cart {
       margin-top: 25px;
+      .button {
+        height: 28px;
+        svg {
+          color: #fc08b3;
+        }
+      }
     }
   }
 }
