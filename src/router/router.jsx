@@ -22,6 +22,7 @@ import SetStatusPopUp from "../components/pages/dropdownProfile/setStatus/SetSta
 import Login from "../components/auth/login/Login";
 import Profile from "../components/pages/dropdownProfile/yourProfile/Profile";
 import LocalNavbar from "../components/navbar/LocalNavbar";
+import Copilot from "../components/pages/dropdownProfile/copilot/Copilot";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -103,6 +104,10 @@ export const router = createBrowserRouter([
       {
         path: "/mkmasudrana806",
         element: <Profile />,
+      },
+      {
+        path: "/github-copilot/signup",
+        element: <Copilot />,
       },
     ],
   },

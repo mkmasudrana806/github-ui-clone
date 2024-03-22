@@ -93,15 +93,24 @@ const AccountDropdownMenu = ({ handleCloseProfile }) => {
           </Link>
           <Divider />
 
-          <li onClick={handleCloseProfile}>
-            <IconWithText icon={<GoRepo />} text={"Your repositories"} />
-          </li>
-          <li onClick={handleCloseProfile}>
-            <IconWithText icon={<AiOutlineProject />} text={"Your projects"} />
-          </li>
-          <li onClick={handleCloseProfile}>
-            <IconWithText icon={<RiCopilotLine />} text={"Your Copilot"} />
-          </li>
+          <Link to={"/mkmasudrana806?tab=repositories"}>
+            <li onClick={handleCloseProfile}>
+              <IconWithText icon={<GoRepo />} text={"Your repositories"} />
+            </li>
+          </Link>
+          <Link to={"/mkmasudrana806?tab=projects"}>
+            <li onClick={handleCloseProfile}>
+              <IconWithText
+                icon={<AiOutlineProject />}
+                text={"Your projects"}
+              />
+            </li>
+          </Link>
+          <Link to={"/github-copilot/signup"}>
+            <li onClick={handleCloseProfile}>
+              <IconWithText icon={<RiCopilotLine />} text={"Your Copilot"} />
+            </li>
+          </Link>
           <li onClick={handleCloseProfile}>
             <IconWithText
               icon={<GoOrganization />}

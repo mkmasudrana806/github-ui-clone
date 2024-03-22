@@ -1,0 +1,76 @@
+@import "../../../../assets/styles/variables.scss";
+
+.copilot {
+  max-width: 530px;
+  margin: 0 auto;
+  .hero {
+    margin-top: 50px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    .img-copilot {
+      border-radius: 100%;
+      background-color: $bg-box-primary;
+      height: 82px;
+      display: flex;
+      justify-content: center;
+      width: 82px;
+      position: relative;
+      &::before {
+        z-index: -1;
+      }
+      &::after {
+        z-index: -2;
+        filter: blur(10px);
+      }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+
+        background: radial-gradient(
+          circle,
+          #ff4800,
+          #15fc00,
+          #ffe900,
+          #00b7ff,
+          #069ff8
+        );
+        border-radius: 5px;
+        border-radius: 100%;
+      }
+    }
+  }
+  .signup-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .plans {
+      column-gap: 16px;
+      > div {
+        width: 100%;
+        .monthly {
+          color: green;
+          background-color: green;
+        }
+      }
+    }
+    .text-gray {
+      color: $color-muted;
+      font-size: 13px;
+      font-weight: 300;
+    }
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+    .button {
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+}
