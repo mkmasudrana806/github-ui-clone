@@ -1,9 +1,9 @@
 import "./button.scss";
 
-const Button = ({ text = "Read more", color = "" }) => {
+const Button = ({ children, text = "Read more", color = "" }) => {
   return (
     <button style={{ backgroundColor: color }} className="button">
-      {text}
+      {children} {text}
     </button>
   );
 };

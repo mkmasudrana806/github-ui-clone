@@ -1,0 +1,29 @@
+@import "../../../../../assets/styles/styles.scss";
+
+.stars {
+  .stack {
+    border: 1px solid $border-primary;
+    padding: 16px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    &:hover {
+      background-color: $bg-box-primary;
+    }
+  }
+  .idea {
+    border-bottom: 1px solid $border-primary;
+    border-left: 1px solid $border-primary;
+    border-right: 1px solid $border-primary;
+    padding: 16px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    &:hover {
+      background-color: $bg-box-primary;
+    }
+  }
+  .carts {
+    .cart {
+      margin-top: 25px;
+    }
+  }
+}

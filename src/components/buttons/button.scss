@@ -3,10 +3,16 @@
   @include basic-button;
   background-color: $bg-box-secondary;
   width: max-content;
-  padding: 5px 16px;
+  padding: 5px 12px;
   border: 1px solid $border-primary;
   &:hover {
     border: 1px solid #8b949e;
     background-color: #30363d;
+  }
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  svg {
+    font-size: 16px;
   }
 }

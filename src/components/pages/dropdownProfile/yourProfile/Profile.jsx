@@ -14,6 +14,7 @@ import Repositories from "./repositories/Repositories";
 import ProfileOverview from "./overview/ProfileOverview";
 import Projects from "./projects/Projects";
 import Packages from "./packages/Packages";
+import Stars from "./stars/Stars";
 
 const Profile = () => {
   const [editProfile, setEditProfile] = useState(false);
@@ -38,7 +39,7 @@ const Profile = () => {
   } else if (params === "packages") {
     content = <Packages />;
   } else if (params === "stars") {
-    content = <Repositories />;
+    content = <Stars />;
   }
 
   return (
