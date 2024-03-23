@@ -1,0 +1,45 @@
+@import "../../../assets/styles/styles.scss";
+
+.publicProfile {
+  // profile part
+  .w-440px {
+    width: 440px;
+  }
+  .profile {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    // profile content
+    .content {
+      overflow: hidden;
+      .bio {
+        padding: 8px;
+        background-color: $bg-box-primary;
+        color: $color-muted;
+        height: 80px;
+        width: 440px;
+        max-width: 100%;
+      }
+    }
+    //   profile photo
+    .photo {
+      .profile-picture {
+        position: relative;
+        .edit-btn {
+          position: absolute;
+          left: 0;
+          bottom: 6px;
+        }
+      }
+    }
+  }
+
+  .contributions,
+  .trendings,
+  .profile-settings,
+  .jobs-profile,
+  .developer-program,
+  .profile-settings {
+    margin-top: 40px;
+  }
+}

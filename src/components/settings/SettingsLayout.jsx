@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useMatch } from "react-router-dom";
+import { NavLink, Outlet, useLocation, useMatch } from "react-router-dom";
 import "./settingsLayout.scss";
 import Divider from "../utilityComponents/Divider";
 import Button from "../utilityComponents/buttons/Button";
@@ -276,7 +276,7 @@ const SettingsLayout = () => {
         </div>
         {/* main outlet  */}
         <div className="mainLayout">
-          this is right side part for outlet components
+          <Outlet />
         </div>
       </div>
     </div>

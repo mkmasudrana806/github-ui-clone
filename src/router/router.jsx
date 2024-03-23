@@ -19,6 +19,7 @@ import MarketPlace from "../components/pages/dropdownMenu/marketplaces/MarketPla
 import Profile from "../components/pages/dropdownProfile/yourProfile/Profile";
 import Copilot from "../components/pages/dropdownProfile/copilot/Copilot";
 import SettingsLayout from "../components/settings/SettingsLayout";
+import PublicProfile from "../components/settings/publicProfile/PublicProfile";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -108,6 +109,16 @@ export const router = createBrowserRouter([
       {
         path: "/settings",
         element: <SettingsLayout />,
+        children: [
+          {
+            path: "/settings/",
+            element: <PublicProfile />,
+          },
+          {
+            path: "/settings/profile",
+            element: <PublicProfile />,
+          },
+        ],
       },
     ],
   },
