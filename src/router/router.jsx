@@ -22,6 +22,7 @@ import SettingsLayout from "../components/settings/SettingsLayout";
 import PublicProfile from "../components/settings/publicProfile/PublicProfile";
 import Account from "../components/settings/account/Account";
 import Appearance from "../components/settings/appearance/Appearance";
+import Accessibility from "../components/settings/accessibility/Accessibility";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -127,6 +128,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/appearance",
             element: <Appearance />,
+          },
+          {
+            path: "/settings/accessibility",
+            element: <Accessibility />,
           },
         ],
       },
