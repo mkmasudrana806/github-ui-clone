@@ -3,7 +3,6 @@ import "./settingsLayout.scss";
 import Divider from "../utilityComponents/Divider";
 import Button from "../utilityComponents/buttons/Button";
 import IconWithText from "../iconsButtons/IconWithText";
-import { GoRepoTemplate } from "react-icons/go";
 import ImageCircle from "../utilityComponents/image/ImageCircle";
 import userLogo from "../../assets/user.jpg";
 import { LuUser2 } from "react-icons/lu";
@@ -93,7 +92,7 @@ const SettingsLayout = () => {
             <li>
               <NavLink
                 end
-                to={"/settings/Notifications"}
+                to={"/settings/notifications"}
                 className={"flex-between"}
               >
                 <IconWithText
