@@ -1,0 +1,44 @@
+@import "../../../../assets/styles/variables";
+
+.theme-mode {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  .day-mode,
+  .night-mode {
+    .image img {
+      width: 100%;
+    }
+    border-bottom: 1px solid $border-primary;
+  }
+  .mode-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .day-mode {
+    .day-mode-head {
+      border-bottom: 1px solid $border-primary;
+      padding: 16px;
+      background-color: $bg-box-secondary;
+    }
+  }
+
+  // night mode
+  .night-mode {
+    .night-mode-head {
+      border-bottom: 1px solid $border-primary;
+      padding: 16px;
+      background-color: #121d2f;
+      .active {
+        padding: 3px 10px;
+        font-size: 12px;
+        width: max-content;
+        border-radius: 50px;
+        border: 1px solid $color-color-primary;
+        color: $color-color-primary;
+      }
+    }
+  }
+}

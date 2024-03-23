@@ -3,13 +3,12 @@ import Divider from "../../utilityComponents/Divider";
 import Button from "../../utilityComponents/buttons/Button";
 import { BsQuestionCircle } from "react-icons/bs";
 import { SiPatreon } from "react-icons/si";
-import SearchFieldLeftIcon from "../../forms/SearchFieldLeftIcon";
 import { LuUser2 } from "react-icons/lu";
 
 const Account = () => {
   return (
     <div className="account">
-      {/* Jobs profile */}
+      {/* change username */}
       <div className="change-username">
         <h3 className="text-large">Change username</h3>
         <Divider />

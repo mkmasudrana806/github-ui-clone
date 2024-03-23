@@ -212,9 +212,9 @@ const PublicProfile = () => {
 
       {/* Trending settings */}
       <div className="trendings">
-        <h3 className="text-large">Jobs profile</h3>
+        <h3 className="text-large">Trending settings</h3>
         <Divider />
-        <p className="text-normal mt-2 mb-4">Pronouns</p>
+        <p className="text-normal mt-2 mb-4">Preferred spoken language</p>
         <select name="" id="" className="btn-primary w-440px">
           <option value="">No preference</option>
           <option value="">They/them</option>
@@ -222,6 +222,13 @@ const PublicProfile = () => {
           <option value="">He/him</option>
         </select>
       </div>
+
+      <p className="text-small mt-1 mb-3">
+        We'll use this language preference to filter the trending repository
+        lists on <span className="text-color">Explore</span> our{" "}
+        <span className="text-color">Trending Repositories page.</span>
+      </p>
+      <Button text="Save Trending settings" />
     </div>
   );
 };
