@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { RiSearchLine } from "react-icons/ri";
-import { GoCommandPalette } from "react-icons/go";
 import "./InputField.scss";
 
-// props format: size="200px" or %. startIcon={<Something />}, endIcon={<Something />}
+// inputfield = icon + input
+//size="200px" or %
 const SearchFieldLeftIcon = ({
   size = "350px",
   startIcon = <RiSearchLine />,

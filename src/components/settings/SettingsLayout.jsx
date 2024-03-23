@@ -65,7 +65,7 @@ const SettingsLayout = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink end to={"/settings/account"} className={"flex-between"}>
+              <NavLink end to={"/settings/admin"} className={"flex-between"}>
                 <IconWithText icon={<FiSettings />} text={"Account"} />
               </NavLink>
             </li>

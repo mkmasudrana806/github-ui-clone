@@ -1,0 +1,56 @@
+@import "../../../assets/styles/variables";
+
+.account {
+  .patreon-account,
+  .export-account,
+  .successor-settings,
+  .delete-account {
+    margin-top: 40px;
+  }
+
+  // search by username, full name, or email address
+  .search-by-username {
+    display: flex;
+    margin-top: 10px;
+    max-width: 640px;
+    .search {
+      width: 100%;
+      border: 1px solid $border-primary;
+      position: relative;
+      color: $color-muted;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      input {
+        background: transparent;
+        border: none;
+        color: $color-primary;
+        padding: 8px 35px;
+      }
+      .start {
+        position: absolute;
+        left: 12px;
+        top: 7px;
+      }
+    }
+    button {
+      border: 1px solid $border-primary;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 32px;
+      cursor: pointer;
+      padding: 0px 10px;
+      color: $color-primary;
+      background-color: $bg-box-secondary;
+      min-width: max-content;
+      border-left: none;
+    }
+  }
+  .delete-account {
+    .red {
+      color: red;
+      button {
+        color: red;
+      }
+    }
+  }
+}

@@ -20,6 +20,7 @@ import Profile from "../components/pages/dropdownProfile/yourProfile/Profile";
 import Copilot from "../components/pages/dropdownProfile/copilot/Copilot";
 import SettingsLayout from "../components/settings/SettingsLayout";
 import PublicProfile from "../components/settings/publicProfile/PublicProfile";
+import Account from "../components/settings/account/Account";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -117,6 +118,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/profile",
             element: <PublicProfile />,
+          },
+          {
+            path: "/settings/admin",
+            element: <Account />,
           },
         ],
       },
