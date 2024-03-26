@@ -1,0 +1,18 @@
+@import "../../../assets/styles/mixins";
+
+.emails {
+  ul {
+    li {
+      margin-left: 20px;
+    }
+  }
+  .manage {
+    padding: 8px 8px 8px 16px;
+    button {
+      height: 28px;
+    }
+  }
+  .primary {
+    color: #0bc70b;
+  }
+}

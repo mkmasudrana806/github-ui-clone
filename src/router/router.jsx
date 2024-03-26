@@ -24,6 +24,7 @@ import Account from "../components/settings/account/Account";
 import Appearance from "../components/settings/appearance/Appearance";
 import Accessibility from "../components/settings/accessibility/Accessibility";
 import Notifications from "../components/settings/Notifications/Notifications";
+import Emails from "../components/settings/emails/Emails";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -137,6 +138,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/notifications",
             element: <Notifications />,
+          },
+          {
+            path: "/settings/emails",
+            element: <Emails />,
           },
         ],
       },

@@ -1,16 +1,15 @@
 import "./notifications.scss";
 import Divider from "../../utilityComponents/Divider";
-import Button from "../../utilityComponents/buttons/Button";
 
 const Notifications = () => {
   return (
     <div className="notifications">
       {/* notifications */}
-      <h3 className="text-large">Accessibility</h3>
+      <h3 className="text-large">Notifications</h3>
       <Divider />
 
       {/* Default notifications email  */}
-      <div className="border-primary p-1">
+      <div className="border-primary p-1 mt-2">
         <p className="text-medium">Default notifications email</p>
         <p className="text-small mt-5">
           Choose where you'd like emails to be sent. You can add more email

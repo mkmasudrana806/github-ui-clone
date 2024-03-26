@@ -11,6 +11,7 @@ const Accessibility = () => {
       <h3>Keyboard shortcuts</h3>
       <p className="text-medium mt-3">General</p>
 
+      {/* general keys  */}
       <div className="flex-left">
         <input className="mb-3" type="checkbox" checked name="" id="" />
         <div className="mt-1">
