@@ -31,6 +31,7 @@ import Keys from "../components/settings/SSHandGPGKeys/Keys";
 import Organizations from "../components/settings/organizations/Organizations";
 import Enterprises from "../components/settings/enterprises/Enterprises";
 import Repositories from "../components/settings/repositories/Repositories";
+import Codespaces from "../components/settings/codespaces/Codespaces";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -172,6 +173,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/repositories",
             element: <Repositories />,
+          },
+          {
+            path: "/settings/codespaces",
+            element: <Codespaces />,
           },
         ],
       },

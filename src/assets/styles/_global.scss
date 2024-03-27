@@ -99,6 +99,13 @@ body {
   cursor: pointer;
 }
 
+// checkbox flex
+.checkbox {
+  display: flex;
+  column-gap: 10px;
+  align-items: baseline;
+}
+
 // color text. blue color
 .text-color {
   color: $color-color-primary !important;
