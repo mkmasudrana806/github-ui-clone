@@ -1,0 +1,16 @@
+@import "../../../assets/styles/styles.scss";
+
+.repositories-page {
+  .header,
+  .username {
+    display: flex;
+    column-gap: 32px;
+    background-color: $bg-box-secondary;
+    border-bottom: 1px solid $border-primary;
+    padding: 16px;
+  }
+  .repositories-container a {
+    padding: 16px;
+    border-bottom: 1px solid $border-primary;
+  }
+}
