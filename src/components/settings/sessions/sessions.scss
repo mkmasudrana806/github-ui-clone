@@ -1,0 +1,16 @@
+@import "../../../assets/styles/styles.scss";
+
+.sessions {
+  .history {
+    @include borderBox;
+    background-color: $bg-box-secondary;
+    > div > div {
+      display: flex;
+      column-gap: 10px;
+    }
+    button {
+      @include basic-button(28px);
+      background-color: $bg-box-secondary;
+    }
+  }
+}

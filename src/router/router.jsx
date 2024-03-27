@@ -26,6 +26,7 @@ import Accessibility from "../components/settings/accessibility/Accessibility";
 import Notifications from "../components/settings/Notifications/Notifications";
 import Emails from "../components/settings/emails/Emails";
 import Password from "../components/settings/passwordAndAuthentication/Password";
+import Sessions from "../components/settings/sessions/Sessions";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -147,6 +148,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/security",
             element: <Password />,
+          },
+          {
+            path: "/settings/sessions",
+            element: <Sessions />,
           },
         ],
       },
