@@ -146,7 +146,7 @@ const SettingsLayout = () => {
             <li>
               <NavLink
                 end
-                to={"/settings/enterprices"}
+                to={"/settings/enterprises"}
                 className={"flex-between"}
               >
                 <IconWithText icon={<TbNetwork />} text={"Enterprises"} />

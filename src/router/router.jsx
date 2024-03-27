@@ -29,6 +29,7 @@ import Password from "../components/settings/passwordAndAuthentication/Password"
 import Sessions from "../components/settings/sessions/Sessions";
 import Keys from "../components/settings/SSHandGPGKeys/Keys";
 import Organizations from "../components/settings/organizations/Organizations";
+import Enterprises from "../components/settings/enterprises/Enterprises";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -162,6 +163,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/organizations",
             element: <Organizations />,
+          },
+          {
+            path: "/settings/enterprises",
+            element: <Enterprises />,
           },
         ],
       },
