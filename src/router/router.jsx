@@ -27,6 +27,7 @@ import Notifications from "../components/settings/Notifications/Notifications";
 import Emails from "../components/settings/emails/Emails";
 import Password from "../components/settings/passwordAndAuthentication/Password";
 import Sessions from "../components/settings/sessions/Sessions";
+import Keys from "../components/settings/SSHandGPGKeys/Keys";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -152,6 +153,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/sessions",
             element: <Sessions />,
+          },
+          {
+            path: "/settings/keys",
+            element: <Keys />,
           },
         ],
       },
