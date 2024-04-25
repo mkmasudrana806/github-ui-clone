@@ -32,6 +32,7 @@ import Organizations from "../components/settings/organizations/Organizations";
 import Enterprises from "../components/settings/enterprises/Enterprises";
 import Repositories from "../components/settings/repositories/Repositories";
 import Codespaces from "../components/settings/codespaces/Codespaces";
+import Packages from "../components/settings/packages/Packages";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -177,6 +178,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/codespaces",
             element: <Codespaces />,
+          },
+          {
+            path: "/settings/packages",
+            element: <Packages />,
           },
         ],
       },

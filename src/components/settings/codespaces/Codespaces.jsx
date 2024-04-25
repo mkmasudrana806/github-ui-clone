@@ -24,7 +24,7 @@ const Codespaces = () => {
         </div>
       </div>
 
-      <select className="btn-primary" name="" id="">
+      <select className="btn-primary mt-3" name="" id="">
         <option value="">
           <p>
             <GoRepo /> Select repository

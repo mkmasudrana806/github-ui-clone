@@ -20,6 +20,10 @@ body {
   scrollbar-color: $bg-scrollbar-track $bg-scrollbar-thumb;
 }
 
+// text center
+.text-center {
+  text-align: center;
+}
 // primary button
 .btn-primary {
   @include basic-button;
