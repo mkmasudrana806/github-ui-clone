@@ -34,6 +34,8 @@ import Repositories from "../components/settings/repositories/Repositories";
 import Codespaces from "../components/settings/codespaces/Codespaces";
 import Packages from "../components/settings/packages/Packages";
 import GitHubCopilot from "../components/settings/copilot/Copilot";
+import Pages from "../components/settings/pages/Pages";
+import Replies from "../components/settings/replies/Replies";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -187,6 +189,14 @@ export const router = createBrowserRouter([
           {
             path: "/settings/copilot",
             element: <GitHubCopilot />,
+          },
+          {
+            path: "/settings/pages",
+            element: <Pages />,
+          },
+          {
+            path: "/settings/replies",
+            element: <Replies />,
           },
         ],
       },
