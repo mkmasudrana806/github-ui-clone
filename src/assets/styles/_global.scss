@@ -24,6 +24,11 @@ body {
 .text-center {
   text-align: center;
 }
+
+// underline
+.underline {
+  text-decoration: underline;
+}
 // primary button
 .btn-primary {
   @include basic-button;

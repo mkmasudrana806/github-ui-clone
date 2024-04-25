@@ -33,6 +33,7 @@ import Enterprises from "../components/settings/enterprises/Enterprises";
 import Repositories from "../components/settings/repositories/Repositories";
 import Codespaces from "../components/settings/codespaces/Codespaces";
 import Packages from "../components/settings/packages/Packages";
+import GitHubCopilot from "../components/settings/copilot/Copilot";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -182,6 +183,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/packages",
             element: <Packages />,
+          },
+          {
+            path: "/settings/copilot",
+            element: <GitHubCopilot />,
           },
         ],
       },
