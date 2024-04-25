@@ -36,6 +36,7 @@ import Packages from "../components/settings/packages/Packages";
 import GitHubCopilot from "../components/settings/copilot/Copilot";
 import Pages from "../components/settings/pages/Pages";
 import Replies from "../components/settings/replies/Replies";
+import SecurityAnalysis from "../components/settings/security/SecurityAnalysis";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -197,6 +198,10 @@ export const router = createBrowserRouter([
           {
             path: "/settings/replies",
             element: <Replies />,
+          },
+          {
+            path: "/settings/security_analysis",
+            element: <SecurityAnalysis />,
           },
         ],
       },

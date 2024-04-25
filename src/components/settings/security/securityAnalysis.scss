@@ -1,0 +1,9 @@
+@import "../../../assets/styles/styles.scss";
+.security-analysis {
+  .red-btn {
+    color: rgb(236, 91, 91) !important;
+    background-color: $bg-box-secondary;
+    @include basic-button;
+    font-weight: bold;
+  }
+}
