@@ -41,6 +41,7 @@ import InstallationLayout from "../components/settings/applications/Installation
 import InstalledApps from "../components/settings/applications/InstalledApps";
 import AuthorizedGitHubApps from "../components/settings/applications/AuthorizedGitHubApps";
 import AuthorizedOAuthApps from "../components/settings/applications/AuthorizedOAuthApps";
+import Reminders from "../components/settings/remainders/Reminders";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -224,6 +225,10 @@ export const router = createBrowserRouter([
                 element: <AuthorizedOAuthApps />,
               },
             ],
+          },
+          {
+            path: "/settings/reminders",
+            element: <Reminders />,
           },
         ],
       },
