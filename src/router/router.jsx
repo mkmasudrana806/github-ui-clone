@@ -37,6 +37,10 @@ import GitHubCopilot from "../components/settings/copilot/Copilot";
 import Pages from "../components/settings/pages/Pages";
 import Replies from "../components/settings/replies/Replies";
 import SecurityAnalysis from "../components/settings/security/SecurityAnalysis";
+import InstallationLayout from "../components/settings/applications/InstallationLayout";
+import InstalledApps from "../components/settings/applications/InstalledApps";
+import AuthorizedGitHubApps from "../components/settings/applications/AuthorizedGitHubApps";
+import AuthorizedOAuthApps from "../components/settings/applications/AuthorizedOAuthApps";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -202,6 +206,24 @@ export const router = createBrowserRouter([
           {
             path: "/settings/security_analysis",
             element: <SecurityAnalysis />,
+          },
+          {
+            path: "/settings/installations",
+            element: <InstallationLayout />,
+            children: [
+              {
+                path: "/settings/installations/",
+                element: <InstalledApps />,
+              },
+              {
+                path: "/settings/installations/apps/authorizations",
+                element: <AuthorizedGitHubApps />,
+              },
+              {
+                path: "/settings/installations/applications",
+                element: <AuthorizedOAuthApps />,
+              },
+            ],
           },
         ],
       },

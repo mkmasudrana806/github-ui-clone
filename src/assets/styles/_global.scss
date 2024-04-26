@@ -20,6 +20,10 @@ body {
   scrollbar-color: $bg-scrollbar-track $bg-scrollbar-thumb;
 }
 
+// height and width 100%
+.w-full {
+  width: 100%;
+}
 // text center
 .text-center {
   text-align: center;
